@@ -1,0 +1,150 @@
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Trebuchet MS, sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color:#0000FF ; padding: 10px; border-radius: 20px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 20px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 20px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: LA RADIO</h1>
+<h2>Estudiante: Andres Alfonso Vides Alvarez - Curso: 801</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el invento?</h2>
+    <p>El aparato inventado por Guglielmo Marconi en 1895 no fue la radio musical de entretenimiento que conocemos en la actualidad, sino el telégrafo inalámbrico. Este invento consistió en el primer sistema de comunicación a distancia capaz de enviar mensajes codificados a través del aire sin necesidad de utilizar cables conductores. Su propósito principal era romper el aislamiento de los barcos en alta mar, conectar continentes separados por océanos y revolucionar la mensajería militar y comercial. Al eliminar la infraestructura de los cables submarinos y terrestres, el invento abarató los costos y aceleró la velocidad de la comunicación global de la época, convirtiéndose en el pilar fundamental de las telecomunicaciones modernas.El funcionamiento del sistema se dividía en dos etapas principales: la emisión y la recepción, operando a través de pulsos electromagnéticos. En el extremo emisor, el operador presionaba un interruptor llamado llave telegráfica; esto liberaba una corriente acumulada que generaba una chispa eléctrica de alto voltaje entre dos esferas de metal. Dicha chispa viajaba hacia una gran antena exterior, la cual transformaba el pulso de energía en una onda de radio invisible que se propagaba por el espacio a la velocidad de la luz.
+ Kilómetros más allá, en el extremo receptor, la onda electromagnética chocaba contra una antena receptora conectada a un tubo de vidrio lleno de finas limaduras de metal, conocido como "cohesor" o coherer.<p> 
+
+
+<p> Al recibir el impacto de la onda, las limaduras metálicas se alineaban magnéticamente y permitían el paso de una corriente local que hacía sonar un timbre o activaba una cinta de papel para registrar el mensaje en código Morse (puntos y rayas).Este invento no surgió de la nada, sino que aplicó y unificó diversos conocimientos científicos de la física del siglo XIX. Marconi se basó directamente en las ecuaciones matemáticas de James Clerk Maxwell y en las demostraciones de Heinrich Hertz, quienes descubrieron que la electricidad podía viajar por el espacio de forma ondulatoria a través de ondas electromagnéticas. Asimismo, incorporó el "efecto de cohesión" descubierto por Édouard Branly y aplicó las leyes de la resonancia y la sintonía para asegurar que el emisor y el receptor operaran exactamente en la misma frecuencia sin sufrir interferencias. El aporte científico más original de Marconi fue el descubrimiento de la "puesta a tierra", que consistía en enterrar parte del circuito en el suelo, lo que multiplicaba exponencialmente la potencia, la estabilidad y la distancia de las ondas de radio.Para lograr todo este proceso, el aparato dependía exclusivamente de la energía eléctrica. En sus versiones iniciales de laboratorio, la electricidad provenía de baterías químicas primitivas combinadas con bobinas de inducción que elevaban el voltaje para hacer saltar la chispa. En las estaciones transatlánticas posteriores, el invento requirió plantas eléctricas masivas impulsadas por motores de vapor y alternadores para enviar señales a miles de kilómetros. En cuanto a sus dimensiones físicas, los equipos de mesa (el transmisor y el receptor de latón y caoba) ocupaban el espacio de un escritorio común de un metro de ancho. Sin embargo, la estructura exterior del invento era monumental, ya que requería una red de cables suspendidos por mástiles de madera o metal que medían entre 30 y 75 metros de altura para poder captar adecuadamente las ondas en el espacio.</p>
+    <img src="imagenradio.jpg" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> Guglielmo Marconi</p>
+    <p><strong>Origen:</strong> 1895,italia</p>
+    <p>Guglielmo Marconi nació en Italia en 1874 y era de una familia con bastante dinero. De niño era el típico raro que odiaba ir al colegio y no le hacía caso a los profesores, pero en su casa se la pasaba leyendo libros de ciencia y experimentando con electricidad. Cuando cumplió 20 años, se encerró en el granero de su papá y se obsesionó con la idea de mandar mensajes por el aire sin usar cables.<p>
+ <p>En 1895 logró su primer gran invento: mandó una señal a más de un kilómetro de distancia y su hermano, que estaba escondido detrás de una colina, disparó una escopeta para avisarle que sí había funcionado. Marconi fue corriendo con el gobierno de Italia a mostrarles su súper invento, pero los políticos le dijeron que eso era una tontería y no servía para nada, así que armó sus maletas y se fue a Inglaterra.<p>
+<p>En Inglaterra sí vieron que era un genio, patentó su radio y fundó su propia empresa.<p>
+<p>En 1901 hizo algo que todos los científicos decían que era imposible por la curva del planeta: mandó una señal desde Inglaterra hasta Canadá cruzando todo el océano Atlántico, y ahí se volvió una superestrella mundial. Su invento se volvió súper importante en 1912 porque gracias a sus radios se salvaron más de 700 pasajeros del Titanic cuando el barco chocó contra el iceberg. Por todo esto le dieron el Premio Nobel de Física. Ya de viejo regresó a Italia, se metió en la política (lo que le trajo problemas después) y siguió inventando cosas hasta que murió en 1937 por culpa del corazón.<p>
+<p> El día de su funeral, todas las estaciones de radio del mundo se apagaron por dos minutos para despedir al verdadero "rey de las ondas</p>
+    <img src="Guglielmo_Marconi.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>El inicio (Código Morse): A finales del siglo XIX solo transmitía ruidos y puntos y rayas. Los aparatos eran gigantes y solo los usaban los barcos y el ejército para emergencias.</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>El cambio (Voz y música): Desde 1920 se convirtió en el entretenimiento de la casa con la señal AM. En los años 50 se inventó el transistor, haciéndola portátil, y en los 70 la señal FM mejoró el sonido para escuchar música sin interferencias.</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>La actualidad (Digital): Hoy viaja por internet a todo el mundo. La escuchamos en el celular a través de aplicaciones, en formato de podcasts cuando queremos y con comandos de voz en bocinas inteligentes.</p>
+    <img src="lineaRadio.WEBP" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>Este invento fue bastante bueno y util,fue un gran invento mejorando la calidad y experiencia de vida ya que podiamos y podemos en la actualidad comunicarnos,escuchar musica,las noticias ETC.Y todo esto sin necesidad de tener una señal wifi o muchos cables gracias a sus ondas electromagneticas,este invento fue un gran avance para la tecnologia moderna inspirando a muchos ingenieros este invento es bastante bueno que no suele ser muy caro, ha sido un invento bastante iconico en la historia de la humanidad siendo muy importante.</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>Es completamente gratis: No necesitas pagar una suscripción mensual ni planes de datos de internet para sintonizar las estaciones locales en tu auto o en un receptor tradicional.
+<li>Te permite hacer otras cosas: Es un medio puramente auditivo, lo que significa que puedes escuchar música o noticias mientras manejas, cocinas, trabajas o haces ejercicio sin tener que mirar una pantalla.
+<li>Funciona en emergencias: En caso de desastres naturales o apagones donde se caen el internet y las redes telefónicas, las señales de radio siguen transmitiendo y son el canal principal para mantenerse informado.
+<li>Tiene un alcance enorme: Su señal llega a lugares remotos, comunidades rurales o carreteras donde no hay cobertura de internet móvil ni televisión digital.
+<li>Compañía e inmediatez: Te conecta con la información al instante (en vivo) y genera una sensación de cercanía y compañía humana que los algoritmos de las listas de reproducción no pueden imitar.</li></ul>
+    <hr>
+    <ul><li>No tiene imágenes: Al ser un medio puramente auditivo, no puedes ver lo que está pasando ni se pueden mostrar gráficos, videos o productos de forma visual.
+<li>Tiene exceso de publicidad: Las estaciones comerciales interrumpen la música o los programas constantemente con muchos anuncios comerciales repetitivos para poder financiarse.
+<li>Depende de un horario fijo: A diferencia del streaming, si te pierdes tu programa o partido de fútbol favorito a la hora en que se transmite en vivo, no puedes retrasarlo ni pausarlo.
+<li>Sufre de interferencias: La señal tradicional de AM y FM puede perder calidad, verse afectada por el clima, túneles o edificios grandes, provocando ese molesto ruido de estática.
+<li>Comunicación en una sola dirección: El oyente tiene un rol pasivo; no puedes interactuar fácilmente en tiempo real con el locutor para dar tu opinión, a menos que llames por teléfono y logres entrar al aire.</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>El Titanic se salvó por radio: Más de 700 personas sobrevivieron al naufragio en 1912 gracias a que los operadores usaron el equipo de radio de Marconi para pedir auxilio.</li>
+<li>Causó pánico mundial: En 1938, la narración radial de La guerra de los mundos fue tan realista que miles de personas creyeron que los marcianos invadían la Tierra.</li>
+<li>El silencio más grande: El día del funeral de Marconi en 1937, todas las emisoras del mundo se apagaron al mismo tiempo durante dos minutos como homenaje.
+<li>La primera palabra: La primera transmisión de voz humana de la historia de la radio fue la lectura de un poema de Navidad en el año 1906.
+<li>Señal extraterrestre: En 1977, un radiotelescopio captó una señal espacial tan extraña que el astrónomo anotó la palabra "Wow!" en el papel; hoy sigue siendo un misterio.
+<li>La torre Eiffel se salvó: Iba a ser demolida tras 20 años de su construcción, pero la salvaron para usarla como una gigantesca antena de radio militar.
+<li>Canción rompe-récord: El tema "Video Killed the Radio Star" (El video mató a la estrella de la radio) fue el primer video musical que transmitió el canal MTV en 1981.
+<li>Publicidad millonaria: El primer anuncio pagado de la historia se emitió en Nueva York en 1922; costó 50 dólares y promocionaba unos departamentos.}
+<li>Radio en el espacio: Las ondas de radio viajan a la velocidad de la luz, por lo que las primeras transmisiones humanas ya han viajado más de 100 años luz hacia el espacio profundo.
+<li>Tiene su propio día: El Día Mundial de la Radio se celebra el 13 de febrero porque fue la fecha en que se creó la Radio de las Naciones Unidas en 1946</li>
+        
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>Muebles gigantes de madera</td><td>Formatos digitales y transmisión por internet</td></tr>
+        <tr><td>Tubos de vacío que debían calentarse</td><td>Dispositivos portátiles, miniatura y pantallas táctiles</td></tr>
+        <tr><td>Sintonización exclusiva de AM y Onda Corta</td><td>Sonido de alta fidelidad, estéreo y sin estática</td></tr>
+        <tr><td>Perillas físicas y escala de aguja manual</td><td>Contenido bajo demanda y formato de podcast</td></tr>
+        <tr><td>Uso exclusivamente familiar y comunitario</td><td>Consumo individual mediante audífonos y dispositivos móviles</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>una radio con pantalla y con imagen, y que vuele, y que sea inteligente, basicamente como una IA personal o siendo mas realistas...que no cambie en nada</p>
+    <img src="dibujoxd.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/hVpUe4bKXkI"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>Patente Británica Nº 7.777 (Guglielmo Marconi, 1900).</li>
+        <li>A Dynamical Theory of the Electromagnetic Field
+        <li>A History of Broadcasting in the United Kingdom
+        <li>Archivo Histórico de la Unión Internacional de Telecomunicaciones
+        <li>Días de Radio
+        <li>Registros Históricos de la Estación KDKA (Pittsburgh, 1920)
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #2c3e50; padding: 10px; border-radius: 5px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 3px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 5px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [el motor de combustión]</h1>
+<h2>Estudiante: [Jasbleidy Paola Romero Jiménez] - Curso: [801]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido">
+<p>Se denomina motor de combustión a un motor capaz de transformar en movimiento la energía proveniente de la combustión de sustancias adecuadas, denominadas combustibles. Inventado por Etienne Lenoir en Bélgica, en el año 1860.[cita requerida]</p>
+
+<p>Los motores de combustión han tenido una potencial aplicación en el transporte desde el siglo XIX con la aparición de la locomotora. A través de los años diferentes motores de combustión se han desarrollado, durante el siglo XX y principios del siglo XXI el motor de cuatro cilindros en línea se volvió el tipo de motor más empleado por automóviles particulares, además los motores de combustión permitieron el desarrollo de los primeros modelos de aviones.</p>
+
+<p>Por lo general casi todos los motores térmicos son motores de combustión, no obstante pueden existir motores térmicos con una fuente de calor diferente a la combustión, como por ejemplo el motor Stirling.</p>
+</div>
+1	<div id="biografia" class="contenido">
+El motor de combustión interna nació como una evolución de la máquina de vapor. El ingeniero belga Étienne Lenoir construyó el primer modelo exitoso en 1860, y el alemán Nikolaus Otto lo perfeccionó en 1876 con el famoso ciclo de cuatro tiempos, transformando la energía del combustible en movimiento dentro de un cilindro Nikolaus Otto inventó el motor de combustión interna de cuatro tiempos en 187 este diseño, conocido como el ciclo Otto, cambió el transporte y la industria para siempre y Nikolaus Otto, nació el 10 de julio de 1832 en Holzhausen  an der Haide, Alemania y falleció el 26 de enero de 1891 en Colonia, Alemania y tiene 58 años de edad y es y Alemania. Nació en el pequeño pueblo de Holzhausen an der Haide y desarrolló gran parte de su trabajo y su fábrica en la ciudad de Colonia  Étienne Lenoir nació el 12 de enero de 1822 en Mussy-la-Ville (Bélgica)  y fallecio el 4 de agosto de año 1900 en Varenne-Saint-Hilaire, Francia y tiene 78 años de edad y es de Francia en 1838, se instaló en París y obtuvo la nacionalidad francesa
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>[La evolución del motor de combustión interna comenzó a principios del siglo XIX con inventos experimentales impulsados por gas e hidrógeno, destacando los diseños pioneros de François Isaac de Rivaz en 1807 y el primer motor comercial de Etienne Lenoir en 1860]</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>[El motor de combustión interna ha cambiado desde el siglo XIX al pasar de diseños básicos de gas a sistemas eficientes con inyección electrónica y turbocompresores. Los cambios principales incluyen la creación del ciclo de cuatro tiempos, la invención del motor diésel y la reducción de gases contaminantes.]</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>[Hoy en día, el motor de combustión interna es una máquina altamente eficiente y limpia, gracias a la inyección electrónica, la turboalimentación y la hibridación. Aunque mantiene el principio clásico de los cuatro tiempos, su diseño busca exprimir el máximo rendimiento con el menor daño ambiental posible.]</p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[El impacto de los motores de combustión interna abarca la emisión de gases contaminantes, el cambio climático y efectos nocivos en la salud pública. Para profundizar en estos efectos, puedes revisar los análisis de Delta-Q Technologies y LinkedIn.</pi> <pi>El motor de combustión interna ha transformado la sociedad moderna al permitir la movilidad masiva, impulsar la economía global y tecnificar el agro y la industria, aunque también ha generado un grave impacto ambiental por la emisión de gases contaminantes. Si te refieres a un motor de 6 cilindros (V6 o en línea), su impacto se refleja en un mayor equilibrio mecánico y potencia, pero con un consumo de combustible superior al de motores pequeños.</p><p>El concepto de un motor de combustión con un tiempo de expansión o trabajo extendido se relaciona con los diseños de motores de cinco tiempos o ciclos especiales como el Atkinson. En estos sistemas, se busca alargar la carrera de los gases para aprovechar mejor la energía térmica en lugar de desperdiciarla por el escape.</p>]
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[Ventaja 1]</li><li>[1 Mayor autonomía: Permiten viajar o trabajar por muchas horas sin depender de una red eléctrica o estaciones de carga.</li>2 Repostaje rápido: Llenar el tanque con gasolina o diésel toma solo unos pocos minutos en cualquier estación de servicio.<li></li> 3 Alta potencia: Ofrecen una excelente fuerza y rendimiento con un tamaño de motor pequeño.</li><li> 4 Variedad de combustibles: Pueden funcionar con gasolina, diésel, gas natural o biocombustibles.</li><li> 5 Tecnología confiable: Es un sistema muy conocido, fácil de reparar y con repuestos disponibles en casi cualquier lugar.]</li></ul>
+    <hr>
+    <ul><li>[Desventaja 1]</li><li>[Mayor autonomía: Permiten viajar o trabajar por muchas horas sin depender de una red eléctrica o estaciones de carga.Repostaje rápido: Llenar el tanque con gasolina o diésel toma solo unos pocos minutos en cualquier estación de servicio.Alta potencia: Ofrecen una excelente fuerza y rendimiento con un tamaño de motor pequeño.Variedad de combustibles: Pueden funcionar con gasolina, diésel, gas natural o biocombustibles.]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+       
+        
+        <li>[1El aceite es vital: Un motor puede funcionar sin gasolina unos minutos, pero sin aceite se destruye por fricción extrema en menos de 30 segundos. </li><li>2 Miles de explosiones: A velocidad normal, cada cilindro produce microexplosiones sincronizadas entre 4,000 y 7,000 veces por minuto.</li><li> 3 Parecen pulmones: Funcionan de manera similar a un sistema respiratorio al inhalar oxígeno fresco, mezclarlo con combustible y expulsar gases.</li><li> 4 Baja eficiencia energética: Desperdician gran parte de la energía; solo aprovechan entre un 30% y un 35% del combustible en movimiento útil.</li><li>5 Calor extremo: Las piezas internas cerca de los pistones y las válvulas superan los 250 °C o 300 °C durante la marcha.<li></li> 6 Invento comercial: Nikolaus Otto, creador del motor de cuatro tiempos, era un comerciante autodidacta y no un ingeniero formado.</li> <li>7 No inventó autos: Otto diseñó su motor para uso industrial estacionario y nunca llegó a fabricar un automóvil.</li> <li> 8 Conexión con la aviación: El hijo de Nikolaus Otto, Gustav Otto, fue el cofundador de la marca de aviones y motores BMW.</li> <li>9 Velocidad del pistón: A 2,000 RPM, un pistón realiza cerca de 70 movimientos de arriba a abajo por segundo.</li> <li>10 Escepticismo inicial: La Academia de Ciencias de Francia predijo en el siglo XIX que los primeros y ruidosos motores de combustión jamás superarían a las máquinas de vapor.]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[dato 1]</td><td>[dato 2]</td></tr>
+        <tr><td>[dato 3]</td><td>[dato 4]</td></tr>
+        <tr><td>[dato 5]</td><td>[dato 6]</td></tr>
+        <tr><td>[dato 7]</td><td>[dato 8]</td></tr>
+        <tr><td>[dato 9]</td><td>[dato 10]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Descripción de su visión futurista]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Libro/Sitio Web/Video usados, deben haber al menos 6 fuentes diferentes]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

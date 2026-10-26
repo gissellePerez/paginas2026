@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto invento tegnologico.</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #F5411D; padding: 10px; border-radius: 20px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 20px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 20px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [Metro.]</h1>
+<h2>Estudiante: [Esthefani Valentina Blanco Rondon.] - Curso: [802]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el metro?</h2>
+    <p>[El metro es sistema de transporte masivo de pasajeros que funciona sobre ferroviarias dentro de entornos urbanos .funciona en vías de uso exclusivo, lo que permite llegar más rápido a tu destino porque evita el tráfico y los cruces a nivel. Él metro se caracteriza por alcanzar unas velocidades de hasta 80km/h, por poder circular de manera subterránea elevada o a nivel de la superficie y por tener estaciones continuas, sus paradas suelen tener una cercanía de 700 y 1.200 metros entre si. los conocimientos científicos aplicados son: El electromagnetismo y la dinámica eléctrica ya que los metros actuales no utilizan combustibles ni fósiles, sino que usan motores de inducción lineal o síncronos, la mecánica de sólidos y geotecnia para construir tuneles bajo de edificios o diferentes estructuras sin que la ciudad colapse y las ciencias de la computación ya que los metros actuales operan con sistemas automáticos sin conductor. Él metro funciona única y exclusivamente con energía eléctrica de alta tensión y las dimensiones pueden variar aunque no mucho según la ingeniería de cada ciudad pero si tomamos como referencia los trenes estándar modernos la longitud total del tren mide entre 134 y 145 metros de largo,la longitud por vagón mide alrededor de 22 metros, él ancho de los vagones tiene una longitud de 2,90 metros y la altura de los vagones tiene una longitud de 3,90 metros y su peso aproximado es de 230 toneladas.]</p>
+    <img src="invento.jpg" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> [Charles Pearson]</p>
+    <p><strong>Origen:</strong> [Londres-1793]</p>
+    <p>[Charles Pearson nació el 4 de octubre en Londres, el se crio en un entorno de clase media en Londres del siglo XIX. Aunque tenía asegurada una vida cómoda y un alto estatus social el decidió convertirse en un político para combatir las diferentes injusticias que suceden a diario, lo que moldeo su mentalidad reformista. creció viendo como Londres se transformaba entre 1801 y 1811,la población de la ciudad superó el millón de habitantes las calles eran un absoluto caos con caballos y carruajes, el aire estaba contaminado y las condiciones sanitarias eran deplorables. además de crear el metro luchó por la libertad religiosa, acabo con jurados corruptos, reformó las prisiones y defendió el voto popular. murió el 14 de septiembre de 1862 de hidropesía. ]</p>
+    <img src="charles pearson.jpeg" alt="Imagen del autor">
+</div>
+<div id="evolución" class="contenido">
+    <h2>La evolución del metro </h2>
+    <h3>etapa 1: primer metro nació en Londres porque las calles arriba estaban llenas de carruajes y caballos, y ya no cabía nadie más. Como en esa época no existía la electricidad, los trenes se movían con locomotoras de vapor, el gran problema era que los túneles se llenaban de un humo negro y espeso que hacía muy difícil respirar, por lo que tenían que abrir huecos hacia la calle para que el aire saliera. En ese entonces, viajar en metro era una aventura oscura y bastante sucia, y para entrar debías comprar un boleto de papel que un trabajador rompía a mano.</h3>
+    <p>[el primer metro del mundo se inauguró en 1863 en las ciudad de Londres, funcionaba con locomotoras a vapor, por lo que los túneles se llenaban de humo. Los vagones eran de madera, las estaciones eran sencillas y el recorrido era corto.]</p>
+    <h3>Etapa 2:Todo cambió cuando llegó la electricidad. Gracias a ella, se pudo quitar el vapor y el humo, lo que permitió que ciudades como Nueva York, París o Ciudad de México construyeran túneles mucho más largos y profundos sin peligro de que la gente se ahogara. Los vagones se hicieron de metal para que fueran más seguros, y se inventaron los neumáticos de goma para que el viaje no fuera tan ruidoso. Para entrar, la gente ya no usaba papel, sino que compraba unas monedas de metal o tarjetas con cinta magnética que se metían en los torniquetes.</h3>
+    <p>[con el paso de los años el metro cambió mucho, los trenes a vapor fueron reemplazados por trenes eléctricos , se construyeron más líneas y estaciones, mejoró la seguridad con cámaras y sistemas de emergencia, se instalaron escaleras eléctricas y asesores, muchas ciudades usan tarjetas eléctricas e incluso automáticos sin conductor.]</p>
+    <h3>Etapa 3:Hoy en día, el metro parece sacado de una película del futuro. En muchas ciudades, los trenes se manejan solos de forma automática, sin necesidad de un conductor humano, porque una computadora controla todo el viaje. Las estaciones son mucho más seguras y tienen paredes de vidrio en el borde del andén para que nadie se caiga a las vías. Además, los trenes modernos ahorran energía cada vez que frenan, tienen internet y te permiten pagar la entrada simplemente pasando tu celular o dejando que una cámara escanee tu rostro.</h3>
+    <p>[hoy en día el metro es uno de los medios de transporte mas importantes del mundo. Es rápido, seguro y puede transportar a millones de personas al día. Además , muchos trenes cuentan con aire acondicionado, pantallas informativas y tecnología que ayuda a ofrecer un servicio más eficiente y cómodo]</p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolución del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Su impacto en la sociedad fue que el metro ha mejorado la vida de las personas diariamente porque permite viajar más rápido al trabajo, al colegio o a otros lugares. También ayuda a reducir los trancones y la contaminación, impulsa la economía al conectar diferentes zonas de la ciudad y facilita al acceso de oportunidades de estudio y empleo.</h2>
+    <p>[Pienso que el metro es un invento muy importante porque cambió la forma en la que las personas se desplazan. Gracias a el, los viajes son más rápidos, económicos y seguros, lo que mejora la calidad de vida y contribuye al cuidado del medio ambiente ya que disminuye el uso de automóviles o carros.]</p>
+</div>
+<div id="Ventajas" class="contenido">
+    <h2>ventajas y desventajas</h2>
+    <ul><li>es rápido.</li><li>contamina menos que los carros</li><li>es económico para muchas personas</li><li>tiene alta capacidad para transportar pasajeros</li></ul>
+    <hr>
+    <ul><li>puede estar muy lleno en las horas pico</li>su construcción es muy costosa</li><li> una falla puede afectar a muchos pasajeros</li><li>n llega a todas las zonas de la ciudad</li><li> en algunas estaciones hay mucho ruido</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[el primer metro del mundo funcionaba con locomotoras de vapor.]</li>
+        <li>[el metro más extenso es de Shanghái que supera los 800 kilómetros de vías.]</li>
+        <li>[en Londres lo llaman "the tube" por sus túneles circulares.]</li>
+        <li>[en Tokio es mal visto hablar por teléfono en el metro.]</li>
+        <li>[operan con energía 100% eléctrica a veces renovable.]</li>
+        <li>[en Tokio pusieron luces led color azul en los extremos de los andenes porque los psicólogos decían que el azul reducía el estrés.]</li>
+        <li>[el metro de Estocolmo es conocida como una galería de arte de 110 kilómetros y se considera la galería de arte más larga.]</li>
+        <li>[excavaciones en CDMX encontraron fósiles prehistóricos.]</li>
+        <li>[el metro de Tokio transporta a 9 millones de pasajeros diarios]</li>
+        <li>[el metro de Moscú destaca por su lujosa arquitectura.]</li>
+        
+
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (antes funcionaba a vapor ,tenían vagones de madera, pocas estaciones  y boletos de papel.)</th><th>Ahora (ahora funciona principalmente con electricidad, tiene redes mucho más amplias, sistema de seguridad, accesibilidad para personas con discapacidad y pagos electrónicos.)</th></tr>
+        <tr><td>[antes el acceso se controlaba con boletos de papel picados a mano por inspectores o con pesadas monedas metálicas]</td><td>[ahora se ingresa deslizando el celular, tarjetas inteligentes o mediante reconocimiento facial ]</td></tr>
+        <tr><td>[antes las estaciones eran túneles oscuros, ruidosos y utilitarios, iluminados con lámparas de gas o bombillas tenues que causaban claustrofobia.]</td><td>[ahora son galerías de arte subterráneas que usan luces LED azules para calmar el estrés de los pasajeros.]</td></tr>
+        <tr><td>[antes los andenes no tenían protección, La gente esperaba al borde de la vía, lo que provocaba accidentes constantes por empujones o caídas.]</td><td>[ahora se instalan puertas de andén de vidrio que se abren sincronizadas con el tren, aislando por completo la vía de los pasajeros.]</td></tr>
+        <tr><td>[antes toda la energía utilizada para frenar los pesados trenes de hierro se desperdiciaba por completo en forma de calor por fricción.]</td><td>[ahora cuentan con frenado regenerativo, tecnología que captura esa energía y la devuelve a la red eléctrica para alimentar otros trenes.]</td></tr>
+        <tr><td>[antes una vez el tren entraba al túnel, quedaba incomunicado. Los conductores dependían de señales físicas y banderas en las vías.]</td><td>[ahora los túneles tienen antenas de red 5G y Wi-Fi, y los vagones modernos incluyen pantallas digitales con mapas interactivos en tiempo real.]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Yo creo que el metro en el futuro será un medio de transporte muy tecnológico y rápido. Por eso en mi dibujo agregué elementos que considero que mejorarían la experiencia. Le agregué paneles solares para tener una energía más limpia y no contaminar el ambiente más de lo que está, también luces led de bajo consumo, un vidrio inteligente en la parte frontal del metro con información sobre las paradas etc, un diseño aerodinámico para mayor eficiencia y velocidad y que sea accesible para todos, con rampas para las personas con discapacidad y por dentro de el metro pondría ventanas con hologramas que mostrarían mapas, información y paisajes, carga para dispositivos eléctricos en lada asiento y por último y no menos importante un sensor que reconozca aparatos tecnológicos para pagar al entrar de una vez, haciendo que la entrada al metro sea mucho más rápida.]</p>
+    <img src=jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>EE1CnCzR66o</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Para esta página web usé Wikipedia, chat gpt, Google modo ia y por último una página web llamada "metro (sistema de transporte)" de Wikipedia. estas fuentes de información me ayudaron a dar un texto mediamente detallado sobre el metro y todos los temas que abarca el tema. ]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>

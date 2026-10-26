@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: , sanGeorgias-serif; background-color: #f4f4f4; color: #333; }
+        .tabs  display: flex; flex-wrap: wrap; background-color: #31F527; padding: 10px; border-radius: 5px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 3px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 20px solid #ccc; background: white; margin-top: 10px; border-radius: 5px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: Marcapasos</h1>
+<h2>Estudiante: Nesbeidys Sánchez - Curso: 802</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripcion</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el invento?</h2>
+    <p>El marcapasos es un pequeño dispositivo electrónico que se implanta debajo de la piel, generalmente en el pecho, y sirve para ayudar al carazón a mantener un ritmo normal cuando late muy lento o de forma irregular. Sirve para detectar los latidos del corazón y, cuando es necesario, envia pequeños impulsos eléctricos a través de unos cables llamados electrodos para estimular el muúculo cadíaco. En su diseñoy funcionamiento se aplican conocimientos cientificos de la biología, la medicina, la electrónica, la electricidad y la ingeniería biomédica. Utiliza ergía eléctrica proporcionada por una batería de litio de larga duración, que normalmente funciona entre 5 y 15 años. Sus dimensiones son aproximadamente de 4 a 5cm de largo, 4 a 5cm de ancho, entre 6 y 8 mm de grsor y tiene un peso de entre 20 y 30 gramos.  </p> 
+    <img src="invento.jpg"imagen ">
+</div> 
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> Jorge Reynolds Pombo</p>
+    <p><strong>Origen:</strong> Bogotá,Colombia,el 22 de junio de 1936</p>
+    <p></p> Jorge Reynolds Pombo es un ingeniero colombiano, conocido por ser el primer creador del marcapasos artificial externo con electrodos internos en 1958. Actualmente desarrolla estudios para el diseño de un "nano marcapasos" (dispositivo médico en miniatura diseñado para regular el ritmo cardíaco), con ayuda del científico Jorge León Galindo.</p>
+    <img src="creador.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p></p> Los primeros marcapasos eran dispositivos grandes y pesados, su tamaño era parecido a un disco de hockey. Requería bacterías recargables conectadas mediante cables que atravesaban la piel, lo que conllevaba a un alto riesgo de infección. 
+    <h3>Etapa 2: Cambios</h3>
+    <p>En los años 80 y 90 los marcapasos se conectaban a dos cabinas del corazón. Comenzaron a incorporar sensores de movimiento para ajustar la frecuencia cardíaca  según el nivel de actividad física del paciente.</p>
+    <h3>Etapa 3: Actualidad </h3>
+    <p>En la actualidad los marcapasos envían datos de manera inalámbrica (vía Bluetooth o transmisores) al centro de cardiología. Esto le permite a los médicos monitorear el ritmo cardiaco en tiempo real e incluso prevenir arritmias cardiacas.  </p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>El marcapasos ha cambiando la vida de muchas personas porque les permite mantener un ritmo cardíaco normal y vivir con más seguridad. Gracias al marcapasos, muchas personas pueden realizar sus actividade diarias, como trabajar y estudiar. Además ha aumentado la esperanza y la calidas de vida de quienes padecen enfermedades del corazón, convirtiendose en uno de los avances más importantes en la medicina.</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>Mantiene un ritmo cardíco normal.</li><li>reduce el riesdo de desmayos por latidos lentos</li><li>Mejora la calidad de vida del paciente</li><li>Permite realizar actividades diarias con mayor seguridad</li>
+    <hr>
+    <ul><li>Requiere una curugía para implantarlo.</li><li>La batería debe remplazarse cuando se agota.</li>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[Dato curioso 1]</li>
+        <li>[Dato curioso 2]</li>
+        <li>[Agrega según sea necesario, al menos 10 datos curiosos]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[Dato 1]</td><td>[Dato 2]</td></tr>
+        <tr><td>[Dato 3]</td><td>[Dato 4]</td></tr>
+        <tr><td>[Dato 5]</td><td>[Dato 6]</td></tr>
+        <tr><td>[Dato 7]</td><td>[Dato 8]</td></tr>
+        <tr><td>[Dato 9]</td><td>[Dato 10]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Descripción de su visión futurista]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Libro/Sitio Web/Video usados, deben haber al menos 6 fuentes diferentes]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [802]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

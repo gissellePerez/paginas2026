@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        Georgia { font-family:Courier New , sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #B825B8; padding: 10px; border-radius: 
+      20pxpx; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 3px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 5px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>TELESCOPIO</h1>
+<h2>Estudiante:XAVI JANCOVICK URREA USMA - Curso:801</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el invento?</h2>
+    <p>Un telescopio es un instrumento óptico que captura luz y amplía la imagen de objetos lejanos para hacerlos parecer más cercanos y detallados. </p>
+<p>El principio básico consiste en recolectar la radiación electromagnética (la luz) a través de una pieza óptica (lente o espejo) llamada objetivo.  </p>
+ <p>Esta luz se concentra en un punto y luego pasa por una segunda lente, llamada ocular, que agranda la imagen para que pueda ser observada por el ojo humano o capturada por una cámara</p>
+    <img src="telescopio.jfif" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong>Hans Lippershey</p>
+    <p><strong>Origen:</strong>Alemania,1570 </p>
+    <p>Hans Lippershey, un óptico y fabricante de lentes nacido en Alemania en 1570 y radicado en los Países Bajos, el fue el que presento el telescopio al publico en el año 1608,El telescopio no fue creado por una sola persona, sino que su invención se divide en dos hitos clave: su creación y su adaptación astronómicatambien tambien ayudaron zacharias janssen y jacocb metius en la creacion del telescopio </p>
+    <img src="hans.jfif" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>El primer telescopio, creado en los Países Bajos en 1608, era un instrumento sencillo: un tubo que contenía dos lentes.era un tubo largo y delgado equipado con dos lentes. Este diseño inicial (conocido como telescopio refractor) consistía en una lente convexa en el extremo delantero (objetivo) y una lente cóncava en el extremo donde se apoyaba el ojo (ocular)</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p> Aumentaron su alcance, mejoraron la nitidez y captar más allá de la luz visibleEl telescopio evolucionó drásticamente desde sus primeros diseños en 1608. Los principales cambios estructurales y tecnológicos se dividen en cuatro etapas fundamentales,</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>Han pasado de ser simples tubos con lentes a convertirse en gigantescos observatorios terrestres robotizados y sofisticadas naves espaciales que exploran el cosmos en longitudes de onda invisibles para el ojo humano, como el infrarrojo</p>
+    <img src="linea.jfif" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>El telescopio revolucionó la historia al transformar nuestra comprensión del universo.El telescopio transformó radicalmente la sociedad al desmentir la creencia de que la Tierra era el centro del universo. Al permitir descubrimientos como las lunas de Júpiter o las fases de Venus, desplazó el pensamiento dogmático e impulsó el método científico, sentando las bases de la Revolución Científica y la astronomía moderna.</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>ventaja1=mayor recolecion de luz</li>
+<li>ventaja2=ampliacion de imagen</li>
+<li>ventaja3=imagenes mas nitidas y detalladas</li>
+<li>ventaja4=saber cosas de los planetas</li>
+<li>ventaja5=inovacion tecnologica</li></ul>
+    <hr>
+    <ul>
+<li>Desventaja1=tamaño,peso y movilidad</li>
+<li>desventaja2=dificil de manejarlo</li>
+<li>desventaja3=Costo elevado</li>
+<li>desventaja4=saber donde queda cada planeta</li>
+<li>desventaja5= Dependencia de la atmósfera y ubicación</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>dato1=El verdadero inventor  fue Hans Lippershey</li>
+        <li>dato2=El error de Galileo fue cometio errores cientificos,rechazo la explicación correcta de que la Luna afectaba las mareas </li>
+        <li>dato3=El tamaño importa más que el aumento porque determina cuánta luz y detalle puede captar el equipo</li>
+        <li>dato4=Visión sobrehumana,porque sirve para ver mucho mas de lejos que un humano puede ver</li>
+        <li>dato5=algunos Tamaño de autobús,Telescopios espaciales como el Hubble o el James Webb tienen el tamaño de un autobús debido a la física óptica y a la enorme complejidad de sus instrumentos.</li>
+        <li>dato6=Velocidad orbital: Un telescopio espacial tiene la  velocidad orbital para contrarrestar la fuerza de gravedad de la Tierra y mantenerse en el espacio sin caer</li>
+        <li>dato7=Una precisión increíble,La increíble precisión de los telescopios modernos se debe a una combinación de óptica avanzada y sistemas de ingeniería complejos que trabajan en conjunto para recolectar y enfocar la luz</li>
+        <li>dato8=dificiles de manejar</li>
+        <li>dato9=Máquinas del tiempo,Sí, los telescopios son máquinas del tiempo naturales. Como la luz tarda un tiempo en viajar por el espacio, mirar a través de ellos nos permite ver el universo tal como era en el pasado, desde hace unos minutos en la Luna hasta miles de millones de años en galaxias lejanas</li>
+        <li>dato10=Telescopios en la Tierra,Los telescopios terrestres son fundamentales porque son más económicos, fáciles de reparar y actualizar que los espaciales</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>Al ver imagenes brillantes producia unos halos de colores lo que provocaba que desaparecian detalles nitidos</td><td>Espejos hechos de oro: El telescopio espacial James Webb tiene espejos recubiertos con una capa de oro ultra fina, ya que este metal es el mejor material para reflejar la luz infrarroja</td></tr>                                                                                                                                                                                                                                                                                                                                                                                                   <tr><td>antes=Tubos excesivamente largos: Para aumentar el alcance y reducir la distorsión, estos instrumentos necesitaban distancias focales enormes, llegando a medir varios metros de longitud</td><td>despues=Óptica que se deforma a propósito: Los grandes telescopios terrestres usan "óptica adaptativa", un sistema de computadoras que deforma ligeramente sus espejos miles de veces por segundo para corregir el parpadeo que causa la atmósfera terrestre (f/ratio)</td></tr>
+<tr><td>antes=tenian un poder de aumento bajo</td><td>despues=Espejos hechos de oro: El telescopio espacial James Webb tiene espejos recubiertos con una capa de oro ultra fina, ya que este metal es el mejor material para reflejar la luz infrarroja</td></tr>
+<tr><td>antes=Imágenes rectas: Gracias a la combinación de una lente convexa y una cóncava (como los modelos galileanos), las imágenes se veían en posición natural y derecha, a diferencia de los modelos astronómicos posteriores que invertían las imágenes</td><td>despues=No usan ojos humanos: A diferencia de los antiguos, los astrónomos modernos casi nunca miran a través de un ocular; el telescopio envía los datos directamente a sensores digitales y supercomputadoras</td></tr>       
+<tr><td>antes=Campo de visión estrecho: Ofrecían un ángulo de visión muy reducido, por lo que encontrar y seguir objetos en movimiento en el cielo nocturno requería mucha paciencia y práctica</td><td>despues=mayor aumento</td></tr><tr><td>antes=Materiales pesados: Los tubos se fabricaban con madera, cuero, cartón prensado o latón, lo que los hacía sumamente robustos pero difíciles de transportar</td><td>despues=Están congelados en el espacio: Para poder captar el calor de galaxias lejanas sin interferencias, los telescopios espaciales infrarrojos operan a temperaturas extremas cercanas al cero absoluto (unos -233 °C)</td></tr>
+<tr><td>antes=Monturas rudimentarias: Carecían de sistemas de guía automáticos, utilizando trípodes de madera sencillos o soportes fijos que requerían ajustar el telescopio a mano constantemente</td><td>despues=Usan rayos láser gigantes: Los observatorios modernos disparan potentes láseres al cielo para crear una "estrella artificial" en la atmósfera, la cual sirve de guía para calibrar y enfocar sus lentes y espejos</td></tr>
+<tr><td>antes=Fabricación artesanal: Las lentes se pulían manualmente de forma individual, por lo que cada telescopio tenía imperfecciones únicas y una calidad óptica muy variable</td>
+<td>despues=No solo ven luz visible: Los modelos actuales captan tipos de luz invisibles para el ojo humano, como ondas de radio, rayos X, rayos gamma e infrarrojos, revelando secretos ocultos del cosmos</td></tr>
+<tr><td>antes=Oculares intercambiables limitados: La mayoría de los primeros modelos contaban con un solo ocular fijo, lo que impedía al astrónomo cambiar el nivel de zoom o el enfoque según la necesidad</td>
+<td>despues=Operan de forma autónoma: Muchos telescopios modernos están programados para escanear el cielo solos; si detectan un evento inusual (como una supernova), avisan automáticamente a otros telescopios del mundo para que apunten al mismo lugar</td></tr>
+<tr><td>antes=Uso terrestre y astronómico: Debido a que mostraban las imágenes al derecho, se utilizaban tanto para observar barcos en el mar y campos de batalla como para mirar el cielo</td>
+<td>despues=Espejos del tamaño de edificios: El Telescopio Extremadamente Grande (ELT), actualmente en construcción en Chile, tendrá un espejo principal de 39 metros de diámetro, compuesto por 798 segmentos hexagonales que funcionarán como uno solo</td></tr>
+  </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>Mi visión del telescopio es que pueda descubrir más planetas, salir de la galaxia, encontrar vida alienígena y descubrir los secretos del espacio. </p>
+    <img src="07.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PXuZK6Z_wME" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>google</li>
+        <li>youtude</li>
+        <li>tiktok</li>
+        <li>wikipedia</li>
+        <li>mi hermano</li>
+        <li>la profe</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

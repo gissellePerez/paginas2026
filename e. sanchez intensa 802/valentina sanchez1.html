@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family:Mensajero , ; background-colVecesor: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #F58B27; padding: 10px; border-radius: 20px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 20px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 20px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [EL PAPEL]</h1>
+<h2>Estudiante: [EDUANGELIS VALENTINA SANCCHEZ ORTIZ] - Curso: [802]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir"(descripcion)">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el papel?</h2>
+    <p>[El papel es un material que usamos todos los días y que está presente en muchas actividades de nuestra vida. Se fabrica principalmente a partir de fibras de celulosa, que se obtienen de los árboles y otras plantas. Estas fibras se mezclan con agua y, después de diferentes procesos, se forman hojas que se secan y se cortan en distintos tamaños y grosores.]</p>
+
+<p>El papel puede ser blanco, de colores, delgado, grueso, liso o rugoso, dependiendo del uso que se le quiera dar. Es muy importante porque permite escribir, dibujar, imprimir libros, hacer cuadernos, periódicos, carteles y documentos. También se utiliza para envolver regalos, fabricar bolsas, cajas y diferentes productos.]</p>
+
+<p>El papel ha sido muy importante para la humanidad porque permitió guardar y transmitir información durante muchos años. Gracias a él, las personas han podido conservar historias, conocimientos, investigaciones y documentos importantes. Sin embargo, para fabricar papel se necesitan materias primas y agua, por lo que es importante reutilizarlo y reciclarlo para reducir el impacto sobre el medio ambiente.]</p>
+ <img src="invento del papel valentina.webp" alt="Imagen del autor">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> [Cai Lun]</p>
+    <p><strong>Origen:</strong> [Cai Lun (China):Cai Lun fue un inventor y funcionario chino, conocido principalmente por su importante aporte al desarrollo del papel. Nació aproximadamente en el año 50 d. C. en China. Durante la dinastía Han trabajó en la corte imperial.]</li>
+
+<li> Alrededor del año 105 d. C., Cai Lun presentó una forma mejorada de fabricar papel utilizando materiales como corteza de árboles, fibras de cáñamo, trapos y redes de pesca. Su método permitió producir un material más ligero, práctico y económico para escribir.]</li>
+
+<li>El invento del papel fue muy importante porque facilitó la escritura, la conservación de información y la transmisión de conocimientos. Con el paso del tiempo, la fabricación del papel se extendió desde China hacia otros países.]</li>
+
+<li> Cai Lun murió aproximadamente en el año 121 d. C. Su trabajo dejó un gran legado para la humanidad, ya que el papel se convirtió en uno de los materiales más importantes para la educación, la comunicación y la cultura.]</p>
+    <p>[Narración de su vida y logros más destacados, al menos dos parrafos escritos por ustedes]</p>
+    <img src="creador.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>[Antes de que el papel fuera inventado y mejorado en China, las personas utilizaban diferentes materiales para escribir y guardar información. En China, por ejemplo, se escribía sobre tablillas de madera y bambú, que eran resistentes pero pesadas y difíciles de transportar. También se utilizaba la seda, que era más ligera y fácil de escribir, pero resultaba muy costosa.
+
+Los primeros papeles eran diferentes al papel que conocemos actualmente. Eran más gruesos, ásperos y de color amarillento o marrón. Se fabricaban con materiales naturales como corteza de árboles, cáñamo, fibras vegetales y telas viejas. Estos materiales se mezclaban con agua hasta formar una pasta, que después se extendía en una superficie y se dejaba secar.
+
+Con el paso del tiempo, la fabricación del papel fue mejorando. Las hojas se hicieron más delgadas, suaves, resistentes y fáciles de producir. Gracias a estos avances, el papel pudo utilizarse para escribir libros, cartas, dibujos y documentos, y finalmente se convirtió en el material que conocemos hoy.]</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>[El papel ha cambiado y mejorado mucho a través de los años. Al principio, era un material más grueso, áspero y de color amarillento, y se fabricaba principalmente con fibras de plantas, corteza de árboles, cáñamo y telas usadas. Su producción era lenta y se hacía de manera artesanal.
+
+Con el paso del tiempo, las personas aprendieron nuevas formas de fabricar papel, logrando que fuera más delgado, resistente, suave y fácil de producir. También comenzaron a utilizar nuevos materiales y máquinas que permitieron fabricar grandes cantidades de papel en menos tiempo.
+
+Durante la Revolución Industrial se crearon máquinas para producir hojas de papel de manera rápida y uniforme. Más adelante, se empezó a utilizar principalmente la pulpa de madera, lo que permitió aumentar considerablemente la producción y reducir los costos.
+
+En la actualidad existen muchos tipos de papel, como el papel reciclado, cartulina, papel periódico, papel fotográfico y papel para impresión. Además, se han desarrollado métodos para reciclarlo y reducir el impacto ambiental. Por eso, una de las mejoras más importantes ha sido hacerlo más práctico y sostenible, buscando aprovechar mejor los recursos y disminuir la cantidad de residuos.]</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>[En la actualidad, el papel es un material muy utilizado y versátil que se encuentra en nuestra vida cotidiana. Se fabrica principalmente con fibras de celulosa provenientes de la madera, aunque también puede elaborarse con papel reciclado y fibras de otras plantas.
+
+Hoy existen muchos tipos de papel, cada uno diseñado para diferentes usos. Por ejemplo, se utiliza papel para libros, cuadernos, impresiones, periódicos, dibujos, empaques, bolsas y productos de higiene. También puede fabricarse en diferentes tamaños, colores, grosores y texturas.
+
+La fabricación moderna del papel utiliza máquinas y tecnología que permiten producir grandes cantidades de manera rápida y uniforme. Además, actualmente se presta mayor atención al cuidado del medio ambiente. Por eso, se promueve el reciclaje, la reutilización del papel y el uso responsable de los recursos naturales.
+
+Aunque actualmente existen medios digitales como celulares, computadores e internet, el papel sigue siendo importante en la educación, el comercio, el arte, la comunicación y muchas otras actividades.]</p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>El papel tuvo un gran impacto en la sociedad porque facilitó la forma de escribir, guardar y transmitir información. Antes de su aparición, las personas utilizaban materiales más difíciles de conseguir y transportar. Con el papel, escribir se volvió más práctico y permitió conservar conocimientos durante mucho tiempo.
+
+También ayudó mucho al desarrollo de la educación. Los libros, cuadernos y documentos pudieron producirse con mayor facilidad, por lo que más personas tuvieron acceso a la lectura y al aprendizaje. Además, el papel permitió que los conocimientos de científicos, escritores e investigadores pudieran compartirse con otras personas.
+
+Por último, el papel cambió la manera en que las personas se comunicaban y organizaban la sociedad. Se utilizó para cartas, periódicos, leyes, mapas, documentos y otros medios de comunicación. Gracias a esto, las ideas y noticias pudieron llegar a muchas más personas, contribuyendo al desarrollo de la cultura, la educación y la sociedad.</h2></div>    <ul><li>[Ventaja 1]</l1. Es fácil de usar:podemos escribir, dibujar e imprimir sobre él.]</li>
+2.<li> Es económico:generalmente tiene un costo bajo y es fácil de conseguir.]</li>
+3. <li>Es ligero:se puede transportar y guardar fácilmente.]</li>
+4. <li> Se puede reciclar:puede reutilizarse para fabricar nuevos productos de papel.]</li>
+5. <li>Es muy versátil:sirve para libros, cuadernos, empaques, carteles, dibujos y muchas otras cosas.]</li></ul>
+    <hr>
+    <ul><li>[Desventaja 1]</li><li>[
+
+1.<li>[Puede dañar los bosques:para producirlo se utilizan árboles, aunque también existe papel reciclado.]</li>
+2.<li> Genera residuos:cuando se desecha, aumenta la cantidad de basura.]</li>
+3.<li> Consume agua:su fabricación requiere bastante agua.]</li>
+4.<li> Se deteriora fácilmente:puede romperse, mojarse o arrugarse.]</li>
+5.<li> Ocupa espacio:cuando se acumulan muchos documentos, libros o cajas, pueden ocupar bastante espacio.]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[Dato curioso 1]</li>
+        <li>[Dato curioso 2]</li>
+        <li>[Dato curioso 3]</
+
+1.<li> El papel se inventó en China hace aproximadamente 2.000 años.]</li>
+2.<li> Cai Lun es reconocido como una de las personas que más contribuyó al desarrollo del papel.]</li>
+3.<li> Antes del papel, las personas escribían sobre piedras, madera, bambú, arcilla y pieles de animales.]</li>
+4.<li> El papel puede fabricarse a partir de madera, fibras vegetales y materiales reciclados.]</li>
+5.<li> Una hoja de papel puede reciclarse varias veces, aunque las fibras se van haciendo más cortas y débiles.]</li>
+6.<li> Existen papeles de diferentes colores, tamaños, grosores y texturas.]</li>
+7.<li> El papel no siempre fue blanco; los primeros tipos podían tener colores amarillentos o marrones.]</li>
+8.<li> El papel es utilizado no solo para escribir, sino también para fabricar cajas, bolsas, empaques, libros y obras de arte.]</li>
+9.<li> El origami, el arte japonés de doblar papel, puede crear figuras muy complejas usando una sola hoja.]</li>
+10.<li> Aunque hoy usamos mucho Internet y dispositivos electrónicos, el papel sigue siendo fundamental en la educación, el arte, los negocios y muchas actividades cotidianas.]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[1.Se fabricaba a mano.]</td><td>[1.Se fabrica principalmente con pulpa de madera reciclada o       nueva.]</td></tr>
+        <tr><td>[2.Se elaboraba con fibras vegetales.]</td><td>[2.Se produce en grandes cantidades con    máquinas.]</td></tr>
+        <tr><td>[3.Era más grueso y áspero que el papel moderno.]</td><td>[Tiene diferentes tamaños, colores y grosores.]</td></tr>
+        <tr><td>[4.Se utilizaba para escribir y dibujar.]</td><td>[4.Puede ser reciclado y reutilizado.]</td></tr>
+        <tr><td>[5.Su producción era lenta y laboriosa.]</td><td>[5.Se utiliza para libros, cuadernos, periódicos, empaques y documentos.]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Yo digo que ya no se va autilizar porque la tecnologia, va a estar muy avanzada y van a crear mas cosas y por eso no se va a utilizar lastimosamente ]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Libro/Sitio Web/Video usados, deben haber al menos 6 fuentes diferentes]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

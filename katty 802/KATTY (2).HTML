@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #2c3e50; padding: 10px; border-radius: 5px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 3px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 5px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [GPS]</h1>
+<h2>Estudiante: [Katty Julieth Ruiz Pérez ] - Curso: [802]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el invento?</h2>
+    <p>[El GPS (Sistema de posicionamiento global) es una red de navegación por satélite que permite determinar la ubicación exacta de un dispositivo en cualquier parte del mundo.Sirve para la navegación (calcular rutas),el rastre4o de personas o vehículos, el registro de actividades deportivas y la cartográfica.El sistema esta compuesto por mas de 24 satélites en orbita ]</p>
+[El Sistema de Posicionamiento Global (GPS) es una infraestructura tecnológica global de navegación y cronometraje compuesta por una red de al menos 24 satélites artificiales propiedad de los Estados Unidos que orbitan la Tierra a unos 20,200 kilómetros de altura, enviando señales de radio continuas que permiten a cualquier dispositivo receptor en el mundo calcular su ubicación geográfica exacta con un margen de error de pocos metros. El funcionamiento de esta red, que técnicamente forma parte de los Sistemas Globales de Navegación por Satélite (GNSS), se basa en un principio matemático llamado trilateración, mediante el cual el receptor móvil mide el tiempo exacto que tarda en viajar la señal desde al menos cuatro satélites diferentes para determinar simultáneamente su latitud, longitud y altitud; todo esto regulado por estaciones de control en la Tierra que calibran los relojes atómicos a bordo de las naves y corrigen sus órbitas. Aunque su origen fue estrictamente militar durante la Guerra Fría para el guiado de misiles y tropas americanas, hoy en día se ha convertido en una herramienta civil e industrial invisible pero indispensable que sostiene la navegación aérea, marítima y terrestre, automatiza la agricultura de precisión, sincroniza las transacciones financieras mundiales mediante sus marcas de tiempo ultraprecisas, y potencia las aplicaciones de mapas diarios en nuestros teléfonos inteligentes.]
+    <img src="invento.jpg" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> [Bradford Parkinson ]</p>
+    <p><strong>Origen:</strong> [16 de febrero 1935 mjz]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>[LOGROS MAS DESTACADOS: El Sistema de Posicionamiento Global (GPS) es una infraestructura tecnológica global de navegación y cronometraje compuesta por una red de al menos 24 satélites artificiales propiedad de los Estados Unidos que orbitan la Tierra a unos 20,200 kilómetros de altura, enviando señales de radio continuas que permiten a cualquier dispositivo receptor en el mundo calcular su ubicación geográfica exacta con un margen de error de pocos metros. El funcionamiento de esta red, que técnicamente forma parte de los Sistemas Globales de Navegación por Satélite (GNSS), se basa en un principio matemático llamado trilateración, mediante el cual el receptor móvil mide el tiempo exacto que tarda en viajar la señal desde al menos cuatro satélites diferentes para determinar simultáneamente su latitud, longitud y altitud; todo esto regulado por estaciones de control en la Tierra que calibran los relojes atómicos a bordo de las naves y corrigen sus órbitas. Aunque su origen fue estrictamente militar durante la Guerra Fría para el guiado de misiles y tropas americanas, hoy en día se ha convertido en una herramienta civil e industrial invisible pero indispensable que sostiene la navegación aérea, marítima y terrestre, automatiza la agricultura de precisión, sincroniza las transacciones financieras mundiales mediante sus marcas de tiempo ultraprecisas, y potencia las aplicaciones de mapas diarios en nuestros teléfonos inteligentes.]</p>
+[NARRACION:Bradford Parkinson nació en Madison, Wisconsin, en 1935. Desde joven mostró una fuerte inclinación hacia la ingeniería y la disciplina militar, graduándose de la Academia Naval de EE. UU. en 1957. Posteriormente, decidió transferirse a la Fuerza Aérea. Su formación académica fue de élite: obtuvo una maestría en ingeniería aeronáutica por el MIT y un doctorado en ingeniería en la Universidad de Stanford en 1966. Durante la Guerra de Vietnam, Parkinson voló en misiones de combate a bordo de aviones AC-130, donde experimentó de primera mano el peligro y la ineficacia de los sistemas de navegación visual e imprecisos de la época, una vivencia que marcaría su obsesión por crear un sistema de guía perfecto.En 1973, con el rango de coronel, la Fuerza Aérea le asignó la misión técnica más importante de su vida: dirigir el programa secreto NAVSTAR. El proyecto estaba estancado debido a las intensas rivalidades y tecnologías incompatibles entre la Marina y el Ejército. Parkinson reunió a los mejores ingenieros del país en el Pentágono durante un famoso fin de semana y sintetizó las mejores ideas en un único diseño arquitectónico: el Sistema de Posicionamiento Global. Bajo su liderazgo directo se lanzaron los primeros satélites de prueba y se demostró la viabilidad militar del sistema. Tras retirarse de la Fuerza Aérea en 1978, Parkinson se incorporó a la Universidad de Stanford como profesor, donde lideró investigaciones civiles para automatizar aviones y tractores utilizando el sistema que él mismo había ayudado a fundar.Logros más destacados
+    <img src="creador.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" cl (css="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: (conocida técnicamente como la Fase I: Validación del Concepto) abarcó el periodo entre diciembre de 1973 y junio de 1979. Fue la fase de prueba militar más crítica bajo la dirección de Bradford Parkinson, diseñada para demostrar que un sistema de navegación por satélite realmente funcionaba en la vida real.] Inicio</h3>
+    <p>[Cómo era al comienzo]</p>
+    <h3>Etapa 2: Lanzados a partir de 1989. Fueron los satélites que completaron la constelación definitiva de 24 satélites en 1993, logrando que el GPS fuera totalmente operativo a nivel mundial. Introdujeron mayor seguridad militar y relojes atómicos de alta precisión. Cambios</h3>
+    <p>[Mejoras a través del tiempo]</p>
+    <h3>Etapa 3: La tecnología de punta de hoy. Tu teléfono o reloj inteligente capta las tres señales a la vez, logrando una precisión milimétrica de solo 30 centímetros, incluso bajo tormentas o rodeado de rascacielos. Actualidad</h3>
+    <p>[Hoy en día, el GPS no es solo una aplicación para buscar direcciones, sino una red global invisible que sostiene la economía, la seguridad y el día a día del planeta.📡 Tecnología multi-constelación (GNSS)Ya no dependemos únicamente de los satélites de Estados Unidos (el GPS original). Los dispositivos modernos se conectan a una red global llamada GNSS, que combina cuatro grandes constelaciones satelitales:GPS (Estados Unidos)Galileo (Unión Europea)BeiDou (China)GLONASS (Rusia)Al rastrear decenas de satélites a la vez, los teléfonos actuales logran una precisión casi milimétrica, reduciendo el margen de error a menos de un metro en condiciones óptimas.]</p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[El GPS transformó el mundo al eliminar el miedo a perderse y otorgar autonomía absoluta a las personas, reemplazando los mapas de papel por una navegación exacta en tiempo real. Esta confianza revolucionó la vida cotidiana y la economía global, permitiendo el nacimiento de aplicaciones de transporte, entregas a domicilio y una logística internacional inmediata que conecta comercios y personas en segundos.Más allá de la comodidad, este invento es una herramienta vital que salva vidas diariamente al localizar con precisión emergencias, ambulancias y misiones de rescate en condiciones extremas. En conclusión, el GPS se convirtió en el sistema circulatorio invisible de la sociedad moderna, optimizando nuestro tiempo y reconfigurando por completo la forma en que nos desplazamos, trabajamos y exploramos el planeta.]</p>
+A nivel de conectividad y seguridad, el GPS funciona como una memoria colectiva que documenta y predice nuestros pasos cotidianos para hacernos la vida más fácil. Al fusionarse con los teléfonos y las redes sociales, no solo nos ayuda a llegar a un destino, sino que nos conecta con comercios locales, registra nuestras rutas de ejercicio y nos permite compartir la ubicación en tiempo real con seres queridos para que viajen tranquilos.Además, su impacto científico y ambiental es enorme, ya que permite monitorear el cambio climático mediante el movimiento de los glaciares, predecir sismos con precisión milimétrica y guiar tractores autónomos en la agricultura de precisión para producir alimentos de forma eficiente. Pasó de ser un radar de guerra a convertirse en el guardián silencioso del medio ambiente y de la automatización del planeta.
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[La principal ventaja es la seguridad personal inmediata: el GPS permite que los servicios de emergencia localicen tu posición exacta en tiempo real si sufres un accidente o necesitas rescate, incluso si estás inconsciente o no sabes dónde te encuentras.</li><li>[Deben haber como mínimo 5 ventajas]</li></ul>
+    <hr>
+    <ul><li>[a principal desventaja es la dependencia absoluta y la pérdida de privacidad: el GPS rastrea y registra tus movimientos constantemente, lo que expone tus datos personales a hackeos o vigilancia, mientras que su uso excesivo debilita tu orientación natural y te deja incomunicado si te quedas sin batería o sin señal.]</li><li>[5Las 5 desventajas principales del GPS hoy en día, resumidas de forma directa, son:Bloqueo de señal (Jamming): Cualquier persona con un dispositivo inhibidor barato puede bloquear la señal, lo que facilita el robo de vehículos de carga al ocultar su ubicación.Falsificación de ubicación (Spoofing): Se pueden emitir señales falsas para engañar a barcos o drones, haciéndoles creer que están en otra ruta, lo que representa un grave peligro de seguridad global.Zonas ciegas y rebotes: Las ondas satelitales no penetran bien en túneles, sótanos o bosques densos, y rebotan en los rascacielos de las ciudades provocando errores de ubicación.Consumo de energía: El uso continuo del chip GPS en teléfonos y relojes inteligentes agota la batería de los dispositivos con gran rapidez.Vulnerabilidad espacial: Al estar en órbita, los satélites quedan expuestos a sufrir daños permanentes por basura espacial o distorsiones causadas por tormentas solares.Si quieres profundizar en alguna, dime si te interesa saber:Cóm  ]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[Relatividad de Einstein: Los satélites experimentan el tiempo más rápido que nosotros en la Tierra por la velocidad y la gravedad; si los relojes atómicos del GPS no se corrigieran diariamente usando la teoría de la relatividad, el sistema perdería su precisión y fallaría por 11 kilómetros cada día.]</li>
+        <li>[Apagón deliberado: Hasta el año 2000, el gobierno de EE. UU. degradaba a propósito la señal civil mediante una función llamada "Disponibilidad Selectiva" para que los civiles solo tuvieran una precisión de 100 metros por seguridad militar, hasta que el presidente Bill Clinton ordenó apagarla para dar la precisión actual.]</li>
+        <li>[Dato 1: El nombre oficial del sistema no es GPS, sino NAVSTAR GPS (Navigation Satellite Timing and Ranging Global Positioning System).]</li>
+Dato 2: Los satélites GPS viajan a una velocidad extrema de 14,000 kilómetros por hora, logrando dar dos vueltas completas a la Tierra cada día.
+
+ Dato 3: Existe un trastorno psicológico moderno donde las personas pierden la capacidad de orientarse por sí mismas y desarrollan ansiedad extrema si no usan navegación digital.   </ul>
+Dato 4: El GPS no funciona bajo el agua; las señales de radio de alta frecuencia se absorben y bloquean casi de inmediato al tocar la superficie del mar.
+Dato 5: Los científicos descubrieron que los perros se alinean con el campo magnético terrestre para orinar utilizando un "GPS biológico" interno sensible al magnetismo.
+Dato 6: Cuando un satélite GPS cumple su vida útil de 15 años, se usa el combustible restante para enviarlo a una "órbita cementerio" más alta.</div>
+
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[Un accidente lo cambió todo: El vuelo 007 de Korean Air fue derribado en 1983 al desviarse por error. Tras esto, el gobierno de EE. UU. decidió abrir el GPS para uso civil mundial.]</td><td>[No fue creado para uso civil: El sistema fue desarrollado por el Departamento de Defensa de los Estados Unidos y entró en funcionamiento en 1973, con fines militares exclusivamente. Recién en 1983 se abrió al público general tras un accidente aéreo.]</td></tr>
+        <tr><td>[Funciona gracias a la relatividad: Los relojes atómicos de los satélites avanzan 38 microsegundos por día respecto a los de la Tierra debido a la velocidad y la gravedad. Si no se corrigiera este efecto de la teoría de Einstein, el GPS se equivocaría en más de 10 kilómetros al día.]</td><td>[No emite señales, solo recibe: Tu teléfono o navegador no le "dice" a los satélites dónde estás; son los satélites los que envían señales y tu dispositivo calcula su posición midiendo el tiempo que tardan en llegar.]</td></tr>
+        <tr><td>[Necesita al menos 4 satélites: Con 3 puede ubicarte en una superficie, pero con 4 calcula también la altitud y corrige la hora exacta. Hay más de 30 satélites activos orbitando la Tierra para garantizar cobertura total.]</td><td>[No funciona bien bajo techo: Las señales atraviesan nubes, vidrio y plástico, pero son bloqueadas fácilmente por edificios, montañas o el agua. Por eso en interiores a veces se usan sistemas complementarios]</td></tr>
+        <tr><td>[No es el único sistema: Aunque lo llamamos GPS genéricamente, es el sistema estadounidense. Existen otros como el europeo Galileo, el ruso GLONASS, el chino BeiDou y el indio NavIC.]</td><td>[Los satélites no están fijos: Orbitan a unos 20.200 km de altura y dan la vuelta al planeta cada 12 horas, de forma que siempre haya al menos 4 visibles desde cualquier punto.]</td></tr>
+        <tr><td>[El nombre no es casual: Significa Global Positioning System (Sistema de Posicionamiento Global). Su nombre original en el ejército era NAVSTAR GPS.]</td><td>[El GPS ayuda a predecir terremotos y erupciones volcánicas: Al medir con extrema precisión cómo se mueven los centímetros de la corteza terrestre día a día, los sensores GPS detectan cuándo las placas tectónicas se están tensando o deslizando, lo que avisa sobre riesgos sísmicos. También se usa para medir el ascenso o descenso del terreno antes de una erupción.]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[yo pienso que seria tipo que ya no seria en celular si no  incrustado en el cuerpo u otra parte 
+por ejemplo en el bolso carro etc ]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[5Las 5 desventajas principales del GPS hoy en día, resumidas de forma directa, son:Bloqueo de señal (Jamming): Cualquier persona con un dispositivo inhibidor barato puede bloquear la señal, lo que facilita el robo de vehículos de carga al ocultar su ubicación.Falsificación de ubicación (Spoofing): Se pueden emitir señales falsas para engañar a barcos o drones, haciéndoles creer que están en otra ruta, lo que representa un grave peligro de seguridad global.Zonas ciegas y rebotes: Las ondas satelitales no penetran bien en túneles, sótanos o bosques densos, y rebotan en los rascacielos de las ciudades provocando errores de ubicación.Consumo de energía: El uso continuo del chip GPS en teléfonos y relojes inteligentes agota la batería de los dispositivos con gran rapidez.Vulnerabilidad espacial: Al estar en órbita, los satélites quedan expuestos a sufrir daños permanentes por basura espacial o distorsiones causadas por tormentas solares.Si quieres profundizar en alguna, dime si te interesa saber:Cóm   ]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [802]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

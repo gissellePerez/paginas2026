@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #FF0000; padding: 10px; border-radius: 5px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 3px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 5px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [LA MOTOCICLETA]</h1>
+<h2>Estudiante: [ISABEL LUCIA] - Curso: [801]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el invento?</h2>
+    <p>[La motocicleta es un vehículo motorizado de dos ruedas diseñado principalmente para el transporte personal rápido y eficiente. Su función principal es trasladar a una o dos personas a través de distancias cortas, medianas o largas, destacando por su agilidad en el tráfico urbano y su facilidad de estacionamiento en comparación con los automóviles. Además de su uso cotidiano como medio de transporte eficiente y económico, las motocicletas cumplen un papel crucial en servicios de mensajería, reparto de mercancías, patrullaje policial y atención de emergencias médicas. Su versatilidad también la extiende al ámbito del entretenimiento, el turismo de carretera y las disciplinas deportivas de alta velocidad o terrenos difíciles.El funcionamiento de una motocicleta se basa en la transformación de energía química en energía mecánica mediante un motor de combustión interna, aunque actualmente existen modelos eléctricos en auge. En los motores de gasolina, una mezcla de aire y combustible se comprime y se enciende mediante una chispa eléctrica en el cilindro, generando una explosión que empuja un pistón. Este movimiento lineal del pistón se convierte en movimiento rotatorio a través del cigüeñal y se transmite a la rueda trasera mediante un sistema de cadena, correa o cardán. Para mantener el equilibrio en movimiento, la motocicleta aprovecha principios físicos fundamentales como el efecto giroscópico de las ruedas al girar y la fuerza centrífuga en las curvas, lo que permite al conductor guiar el vehículo simplemente inclinando su cuerpo y girando el manubrio.En el desarrollo y operación de la motocicleta se aplican diversos conocimientos científicos de la física y la química. La termodinámica explica cómo el motor convierte el calor de la combustión en trabajo mecánico útil. La cinemática y la dinámica gobiernan el movimiento, la aceleración y las fuerzas de frenado mediante la fricción entre los neumáticos y el asfalto. Asimismo, la aerodinámica es clave en el diseño del chasis y el carenado para reducir la resistencia del aire, optimizando el consumo de combustible y la estabilidad a altas velocidades. Por último, la ley de conservación del momento angular describe cómo las ruedas en rotación actúan como giroscopios, aportando una estabilidad natural al vehículo mientras se encuentra en marcha.Largo: 2,00 metros a 2,40 metros (\(2,00\text{ m} - 2,40\text{ m}\))Ancho: 0,70 metros a 0,95 metros (\(0,70\text{ m} - 0,95\text{ m}\))Alto (profundidad total): 1,05 metros a 1,40 metros (\(1,05\text{ m} - 1,40\text{ m}\))Masa (Peso): 110 kilogramos a 260 kilogramos (\(110\text{ kg} - 260\text{ kg}\))]</p>
+    <img src="invento.jpg" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> [Gottlieb Daimler y Wilhelm Maybach ]</p>
+    <p><strong>Origen:</strong> [ALEMANIA 29/08/1885]</p>
+    <p>[Gottlieb Daimler nació en Schorndorf, Alemania, en 1834, y se convirtió en una de las figuras más influyentes de la Revolución Industrial gracias a su genialidad para la ingeniería mecánica.Su logro más destacado se materializó en 1885 con la creación del Daimler Reitwagen, un vehículo de madera con dos ruedas accionado por un motor de gasolina de cuatro tiempos que pasó a la historia como la primera motocicleta del mundo]</p>
+    <img src="creador.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>[Etapa 1: Los Orígenes (1867 - 1889): Comienza con el estadounidense Sylvester Howard Roper, quien adaptó un motor a vapor a una bicicleta en 1867. El salto clave ocurrió en 1885 cuando Gottlieb Daimler y Wilhelm Maybach crearon la Reitwagen, el primer vehículo de dos ruedas con motor de combustión interna]</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>[ (décadas de 1920 a 1950) transformó las rudimentarias bicicletas motorizadas en verdaderos vehículos de transporte. La mejora clave de esta era fue la transición hacia motores más potentes, la introducción de la suspensión y el salto a la producción en masa]</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>[La evolución de la motocicleta en su tercera etapa (actualidad) se caracteriza por la digitalización total. Hoy en día, las motos integran inyección electrónica, sistemas de seguridad activa como ABS, control de tracción, pantallas conectadas por Bluetooth y, en muchos casos, propulsión 100% eléctrica o modos de conducción personalizables]</p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[La motocicleta transformó radicalmente la movilidad urbana al democratizar el transporte rápido, económico y eficiente. Para millones de personas en todo el mundo, este invento significó la transición de una dependencia absoluta del transporte público masivo o la tracción animal, a la conquista de la autonomía individual]</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[Ventaja 1]</li><li>[Deben haber como mínimo 5 ventajas]</li></ul>
+    <hr>
+    <ul><li>[Desventaja 1]</li><li>[Deben haber como minimo 5 desventajas]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[Sabias que la primera motocicleta de la historia, la Daimler Reitwagen de 1885, tenía un chasis y ruedas hechos completamente de madera con refuerzos de hierro, y no utilizaba neumáticos de goma.]</li>
+        <li>[Ese mismo primer modelo incluía dos pequeñas ruedas laterales de apoyo (como las de las bicicletas infantiles) porque sus creadores no confiaban en que el conductor pudiera mantener el equilibrio en dos ruedas.]</li>
+        <li>[1.La primera funcionaba a vapor: Creada en 1867 por el estadounidense Sylvester Roper, esta invención utilizaba una caldera de carbón. ¡Imagínate necesitar una pala para alimentar tu moto mientras esperas en un semáforo!
+2.El primer motor de gasolina era de madera: Diseñada por los alemanes Gottlieb Daimler y Wilhelm Maybach en 1885, la Daimler Reitwagen tenía un marco y ruedas de madera.
+3.No tenía frenos: Para detenerse, el conductor de esta primera moto de 1885 tenía que inclinarse bruscamente o arrastrar los pies por el suelo.
+4.El ingenio de una marca de armas: Fabricantes históricos como Royal Enfield o BSA comenzaron fabricando rifles y cañones. Descubrieron que las técnicas de los cañones eran idénticas a las utilizadas para los cilindros de los motores.
+5.Carburadores de salsa de tomate: La primera motocicleta Harley-Davidson data de 1903 y su carburador fue fabricado de manera improvisada utilizando una simple lata de salsa de tomate.
+6.El término "motocicleta": La palabra fue utilizada por primera vez en 1894 por los inventores alemanes Hildebrand y Wolfmüller para describir a su vehículo.
+7.Mujeres pioneras de la ruta: En la década de 1930, la estadounidense Bessie Stringfield rompió estereotipos y cruzó Estados Unidos en solitario, ganándose el apodo de "La Reina de la Carretera".
+8.Los primeros saltos extremos: Evel Knievel, la leyenda de las acrobacias, realizó más de 75 saltos extremos a lo largo de su carrera. Uno de sus actos más famosos y caóticos ocurrió en 1967 al saltar sobre las fuentes del Caesars Palace en Las Vegas.
+9.Asombrosos récords de velocidad tempranos: En 1907, el piloto británico William "Billy" Orpen logró un registro de 131.7 km/h con su moto de 25 caballos de fuerza, marcando el inicio de la búsqueda insaciable de velocidad.
+10.Modelos de la Segunda Guerra Mundial: Marcas emblemáticas como Indian y Harley-Davidson produjeron miles de motocicletas diseñadas especialmente para las fuerzas aliadas durante la II Guerra Mundial, utilizándolas para patrullaje y mensajería.Agrega según sea necesario, al menos 10 datos curiosos]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[Dato 1]</td><td>[Dato 2]</td></tr>
+        <tr><td>[Dato 3]</td><td>[Dato 4]</td></tr>
+        <tr><td>[Dato 5]</td><td>[Dato 6]</td></tr>
+        <tr><td>[Dato 7]</td><td>[Dato 8]</td></tr>
+        <tr><td>[Dato 9]</td><td>[Dato 10]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Descripción de su visión futurista]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Libro/Sitio Web/Video usados, deben haber al menos 6 fuentes diferentes]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [801]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+
+U

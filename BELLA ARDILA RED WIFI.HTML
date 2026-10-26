@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Comic Sans MS, Arial Black; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color:#F56127; padding: 10px; border-radius: 0px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 20px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 20px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; 
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [RED WIFI]</h1>
+<h2>Estudiante: [BELLA PAOLA ARDILA CHACON] - Curso: [801]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+
+     <h2>¿Qué es el invento?</h2>
+    <p>[tecnologia que conecta dispositivos electrónicos sin cables mediante ondas de radio. ]</p
+    <img src="invento.jpg" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+<P>Hedy Lamarr:Actriz e inventora.invenó el salto de frecuencia,base del wifi, Bluetooth y gps.  vie Hayes:ingeniero cosideradoel padre del wifi.unificó la industria bajo el estándar global 802.11. john o´ sullivan: ingeniero australiano.creóel chip clave para transmitir datos rápidos en interiores sin interferencias.ALOltAnet(1971):primera red de datos por radio;conectaba computadoras entre las islas de Hawái .</p>
+    <p><strong>Nombre:</strong> [john o´sullivan,]</p>
+    <p><strong>Origen:</strong> [la red wifi moderna se inventó en Australia y se lanzóoficialmente en el año 1997]</p>
+    <p>[Narración de su vida y logros más destacados, al menos dos parrafos escritos por ustedes]</p>
+    <img src="creador.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio 1997(802.11)nace el primer estándar con una velocidad muy lenta.</h3>
+    <p>[Al comienzó,el wifi era etremadamente lento,propenjoa interferencias y un lujo exclusivo para entornos empresariales o universitarios ]</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>[Mejoras a través del tiempo]</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>[Cómo es hoy en día]</p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[eliminar la necesidas de cables,facilitando un acceso universal y ubicado a internet en hogares,empresas y espacios publicos.  Reflexión personal sobre cómo este invento ayudó a las personas o cambió su forma de vivir, al menos dos parrafos]</p>
+</div>   
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[Ventaja 1]</li><li>[Deben haber como mínimo 5 ventajas]</li></ul>
+    <hr>
+    <ul><li>[Desventaja 1]</li><li>[Deben haber como minimo 5 desventajas]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[su nombre comercial no significa nada, fue impulsada por una actriz de hollywood,rebotan como ecos por las casas existen más dispositivos conectados q personas en el planetaDato curioso 1]</li>
+        <li>[Dato curioso 2]</li>
+        <li>[Agrega según sea necesario, al menos 10 datos curiosos]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+<p>wifi antiguo(2.4GHz).velocidad lenta.cortes enm videos.zonas muertas sin señal.se satura con pocos equipos. mucholag.Ahora:wifi moderno(5o6GHz).velocidad ultra rápida.streaming, cobertura total.soporta muchos dispositivos.conecxión estable.</p>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[Dato 1]</td><td>[Dato 2]</td></tr>
+        <tr><td>[Dato 3]</td><td>[Dato 4]</td></tr>
+        <tr><td>[Dato 5]</td><td>[Dato 6]</td></tr>
+        <tr><td>[Dato 7]</td><td>[Dato 8]</td></tr>
+        <tr><td>[Dato 9]</td><td>[Dato 10]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Descripción de su visión futurista]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Libro/Sitio Web/Video usados, deben haber al menos 6 fuentes diferentes]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

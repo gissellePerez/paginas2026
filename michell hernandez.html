@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family:  Josefin Sans, Roboto; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color:#F5F227 ; padding: 10px; border-radiusx0PX:20px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 20px; }
+        .tab:hover { background-color: #1abc9c; 
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 20px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [TeLEVISION]</h1>
+<h2>Estudiante: [YULIANNYS MICHELL HERNANDEZ DIAZ] - Curso: [802]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('fue un ingeniero e inventor escocés, mundialmente reconocido como el pionero que desarrolló y demostró el primer sistema de televisión en vivo del mundo.')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el televisor?</h2>
+    <p>[Un televisor (coloquialmente conocido como tele o TV) es el aparato electrónico diseñado para recibir y reproducir las señales de televisión. Su función principal es transformar las señales recibidas (por antena, cable o internet) en imágenes en movimiento y sonido sincronizadoUn televisor es el aparato electrónico diseñado para recibir y reproducir señales de televisión, combinando imágenes en movimiento y sonido. </p>
+<p>Es el receptor final de las emisiones enviadas por ondas, cable o internet, permitiendo el acceso a información, cultura y entretenimiento desde el hogar.</p>
+<p>El dispositivo funciona procesando las señales que recibe a través de su sintonizador interno o mediante conexión a internetEstas señales se decodifican y se proyectan en su pantalla utilizando millones de pequeños puntos luminosos, mientras que el sonido se emite a través de sus altavoces integrados, creando una experiencia audiovisual sincronizada.]"</p>
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> [John Logie Baird]</p>
+    <p><strong>Origen:</strong> [John Logie Baird (Escocia): Nació en Helensburgh, Escocia, en 1888. Como ingeniero eléctrico, desarrolló el primer sistema de televisión electromecánica y realizó la primera demostración pública de imágenes en movimiento en Londres el 26 de enero de 1926.]</p>
+    <p>[John Logie Baird (1888-1946) fue un ingeniero y físico escocés, mundialmente conocido por ser el inventor del primer sistema público de televisión, así como del primer tubo de televisión en color.Hitos Principales1925 (Primera Imagen): Logró transmitir con éxito la silueta y el rostro reconocible de un ser humano en Londres, siendo la primera estrella televisiva el joven oficinista William Taynton.1926 (Demostración Pública): El 26 de enero de 1926, presentó su invento ante la Royal Institution de Londres, marcando un hito al transmitir imágenes en movimiento de dos muñecos de ventrílocuo .</p>
+    <img src="creador.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del televisor</h2>
+    <h3>Etapa 1: el inicio/h3>
+    <p>[Cómo era al comienzo:El comienzo de la televisión se remonta a la década de 1920 y se caracterizó por aparatos mecánicos de madera que proyectaban imágenes diminutas y parpadeantes. Desde crear siluetas básicas hasta dar paso a la tecnología electrónica, los primeros televisores eran muy distintos a las pantallas planas actuales,El cine y el televisor tienen raíces conectadas pero historias distintas. El cine nació oficialmente el 28 de diciembre de 1895 en París, gracias a los hermanos Lumière y su cinematógrafo. La televisión despegó cuando John Logie Baird transmitió la primera imagen en 1926, llegando a emisiones comerciales masivas a mitad del siglo xx]</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>[Mejoras a través del tiempo:El televisor evolucionó desde cajas mecánicas de madera hasta pantallas ultrafinas conectadas a internet. Los hitos clave incluyen el tubo de rayos catódicos, la transición al color, las pantallas planas (Plasma/LCD/LED), y la era actual de los Smart TVs, paneles OLED y resoluciones 4K / 8K]</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>[Cómo es hoy dia:Han dejado atrás la clásica caja para convertirse en pantallas 4K/8K con inteligencia artificial, altavoces integrados, conexión a internet y acceso directo a plataformas de streaming,Los televisores actuales son pantallas inteligentes y ultradelgadas diseñadas como centros de entretenimiento digital.]</p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[Reflexión personal sobre cómo este invento ayudó a las personas o cambió su forma de vivir, al menos dos parrafos]</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[Ventaja 1]</li><li> <li>[1:Entretiene con películas, series, programas y deportes.]</li>
+<li>[2:Informa sobre noticias y acontecimientos del mundo.]</li>
+<li>[3: Ayuda a aprender mediante documentales y programas educativos.]</li>
+<li>[4: Favorece la convivencia al permitir compartir contenidos en familia.]</li>
+
+</li></ul>
+    <hr>
+    <ul><li>[Desventaja 1]</li><li> <li>[1:Puede causar cansancio visual si se mira durante mucho tiempo.]</li>
+<li>[2:Consume mucho tiempo, especialmente cuando se usa en exceso.]</li>
+<li>[3:Reduce la actividad física al permanecer mucho tiempo sentado.]</li>
+<li>[4:Puede distraer de los estudios y otras responsabilidades.]</li>
+<li>[5:Puede afectar el sueño si se utiliza durante mucho tiempo, especialmente antes de dormir.]</li>
+
+</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[1:El primer televisor electrónico fue desarrollado en la década de 1920.]</li>
+        <li>[2Los primeros televisores tenían pantallas muy pequeñas.:]</li>
+        <li>[3:Los televisores antiguos mostraban imágenes en blanco y negro]</li>
+        <li>[4: La televisión a color comenzó a popularizarse a mediados del siglo XX.]</li>
+        <li>[:5La televisión puede transmitir señales mediante satélites.]</li>
+<li>[6:Actualmente, muchos televisores permiten jugar videojuegos.]</li>
+<li>[7:Los televisores inteligentes pueden conectarse a Internet.]</li>
+<li>[8:Algunos televisores modernos tienen una resolución 4K u 8K.]</li>
+<li>[9:Muchos televisores pueden conectarse con celulares y computadoras.]</li>
+<li>[10:Además de imágenes, el televisor puede reproducir sonido, música y diferentes tipos de contenido.]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[Dato 1:Los televisores antiguos tenían pantallas pequeñas y eran en blanco y negro. Además, funcionaban con antenas y tenían pocos canales.
+]</td><td>[Dato 2:Pantalla de alta resolución: 4K y, en modelos avanzados, 8K.]</td></tr>
+        <tr><td>[Dato 3:Los televisores antiguos tenían pocos canales y se cambiaban manualmente con botones.
+]</td><td>[Dato 4:Smart TV: permite conectarse a Internet y utilizar aplicaciones como Netflix, YouTube y otras plataformas.]</td></tr>
+        <tr><td>[Dato 5:Los televisores antiguos consumían mucha electricidad y tardaban unos minutos en encenderse]</td><td>[Dato 6: Funciones para videojuegos: alta frecuencia de actualización, bajo tiempo de respuesta y tecnologías como VRR.]</td></tr>
+        <tr><td>[Dato 7:Los televisores antiguos tenían una pantalla de vidrio muy gruesa y un diseño grande y pesado.]</td><td>[Dato 8:Control por voz: permite cambiar canales, buscar contenido o controlar funciones mediante asistentes de voz.]</td></tr>
+        <tr><td>[Dato 9:Los televisores antiguos tenían pocos canales y la señal podía perderse fácilmente cuando hacía mal tiempo.]</td><td>[Dato 10:Control por voz: permite cambiar canales, buscar contenido o controlar funciones mediante asistentes de voz.]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[En 100 años, aproximadamente en 2126, un televisor podría ser muy diferente a los actuales. Por ejemplo:
+Podría ser una pantalla holográfica, sin necesidad de una superficie física.
+Podría controlar lo que muestra según tus pensamientos, emociones o preferencias.]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Libro/Sitio Web/Video usados, deben haber al menos 6 fuentes diferentes]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #2c3e50; padding: 10px
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; backgro; border-radius: 20px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #4927f5; color: white; cursor: pointer; border-radius: 20px; }
+        .tab:hover { background-color: #1abc9c; }und: white; margin-top: 10px; border-radius: 20px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [MICROCHIP]</h1>
+<h2>Estudiante: [SEBASTIAN JOSE MARQUEZ ABREU] - Curso: [802]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido">
+    <h2>¿Qué es el invento?</h2>
+    <p>[Los microchips de ahora se definen por una extrema miniaturización a escala nanométrica, lograda mediante tecnologías avanzadas como la litografía ultravioleta extrema. Este proceso permite integrar decenas de miles de millones de transistores en un espacio del tamaño de una uña, donde los componentes individuales miden apenas unos pocos átomos de ancho. Al reducir las distancias que deben recorrer los electrones, los dispositivos actuales alcanzan velocidades de procesamiento masivas, ejecutando billones de cálculos por segundo de forma casi instantánea.]</p><p>[Esta altísima densidad de componentes no solo incrementa la potencia de cálculo, sino que ofrece una eficiencia energética sin precedentes. Al requerir voltajes eléctricos sumamente bajos para conmutar los transistores microscópicos, los procesadores reducen drásticamente el consumo de batería y la generación de calor. Gracias a este salto tecnológico, los teléfonos inteligentes, relojes digitales y computadoras portátiles modernas pueden mantener un alto rendimiento continuo durante todo el día con una sola carga.]</p><p>[Finalmente, la arquitectura interna de los microchips actuales ha evolucionado hacia la especialización y la integración de Inteligencia Artificial. Los diseñadores ya no crean procesadores genéricos, sino circuitos híbridos que reservan bloques enteros de silicio, llamados NPU (Unidades de Procesamiento Neuronal), para tareas de aprendizaje automático. Esto permite que funciones avanzadas de traducción en tiempo real, edición fotográfica automatizada y asistentes de voz se ejecuten de forma local en el dispositivo, sin depender de internet.]</p>
+    <img src="chip.jpg" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> [JACK KILBY]</p>
+    <p><strong>Origen:</strong>[ Nacio el 12 DE SEPTIEMBRE DE 1958 ESTADOS UNIDOS y murió en junio de 2005]</p>
+    <p>[ Kilby fundó las bases de la miniaturización. Sin este logro, hoy no existirían los teléfonos inteligentes, las computadoras portátiles ni las consolas de videojuegos.]</p>
+    <img src="jack.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>[Los primeros microchips (circuitos integrados) nacieron en 1958 y eran láminas muy básicas hechas de germanio. A diferencia de los miles de millones de transistores actuales, el primer prototipo de Jack Kilby en Texas Instruments solo contenía un transistor, tres resistencias y un condensador unidos por cables de oro]</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>[Los microchips han evolucionado radicalmente desde su creación en 1958. Han pasado de medir centímetros y contener unos pocos transistores a escalas de nanómetros, integrando miles de millones de ellos. Esta miniaturización ha incrementado drásticamente su velocidad, eficiencia energética y potencia, impulsando desde teléfonos móviles hasta inteligencia artificial avanzada]</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>[microchip moderno se ve distinto dependiendo de su función, pero externamente suele parecer un pequeño cuadrado negro con diminutas patas metálicas, o un cilindro de vidrio del tamaño de un grano de arroz si es para implantes. Por dentro, es una estructura microscópica de silicio con miles de millones de transistores]</p>
+    <img src="linea.png" alt=>
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[El microchip transformó por completo a la sociedad moderna al impulsar la revolución digital, permitiendo la automatización masiva, la conectividad global y la portabilidad de la tecnología]</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[Identificación permanente e inalterable: A diferencia de las placas tradicionales, el implante subcutáneo no puede perderse, romperse ni ser retirado con facilidad.]</li><li>[Mayor tasa de éxito en reencuentros: Las clínicas y refugios leen el código único para localizar de inmediato a los dueños.]</li></ul>[ No se cae ni se deteriora, a diferencia de los collares o placas.Permite a veterinarios y refugios localizar al propietario de forma rápida si el animal se pierde.Sirve para demostrar la propiedad del animal ante casos de robo o disputas.Se implanta con una inyección rápida e indolora que dura segundos. Es obligatorio para salir del país con tu mascota hacia múltiples destinos internacionales.]
+    <hr>
+    <ul><li>[Desventaja 1]</li><li>[Al transmitir un número estático, son propensos al robo de identidad o clonación.Incompatibilidad con equipos médicos, como el riesgo de quemaduras o distorsión de imágenes en máquinas de resonancia magnética.El implante puede desplazarse bajo la piel, dificultando su lectura.Como cualquier cuerpo extraño, existe riesgo de rechazo o infección al insertarlo. No funcionan como rastreadores en tiempo real ni en humanos, ni en animales.]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[ Los microchips de identificación para mascotas son dispositivos de radiofrecuencia (RFID) tan pequeños que se implantan bajo la piel mediante una aguja, similar a una vacuna.]</li>
+        <li>[ En contra de la creencia popular, un microchip veterinario no rastrea la ubicación en tiempo real; solo funciona como un código de barras que revela un número de identificación único al ser escaneado.]</li>
+        <li>[ En el cuerpo de una mascota, el microchip no requiere baterías ni mantenimiento y puede durar décadas. Funciona gracias a la energía que emite el escáner al pasar sobre él. Durante décadas, los ingenieros de semiconductores han escondido diminutas ilustraciones, firmas, caricaturas y personajes dentro de las capas microscópicas de silicio (una práctica conocida como chip art). Un microchip para mascotas no guarda historiales médicos ni direcciones, solo un código único de 9 a 15 dígitos. Para que funcione, este número debe estar inscrito en una base de datos en línea. Antes de su invención, los ordenadores utilizaban válvulas de vacío (similares a bombillas). Eran tan grandes que una computadora podía ocupar una habitación entera y pesar 30 toneladas. Un solo chip moderno puede llegar a integrar miles de millones de transistores en un espacio más pequeño que la uña de un dedo. Los primeros dispositivos semiconductores se fabricaron con germanio, pero este elemento fue rápidamente reemplazado por el silicio debido a su abundancia y mejores propiedades térmicas. El ingeniero eléctrico Jack Kilby, de Texas Instruments, desarrolló el primer circuito integrado de la historia, un hito que revolucionó la electrónica. El microchip es una herramienta clave para el bienestar animal y es un requisito obligatorio de identificación para viajar con mascotas a destinos internacionales.]</li><li>[Nacieron de un invento de Jack Kilby: En 1958, el ingeniero creó el primer prototipo funcional usando una sola pieza de germanio.]</li><li>[El proceso de fabricación de los microchips actuales requiere salas de producción que son hasta 10,000 veces más limpias que un quirófano médico.]</li><li>[Se fabrican con arena común: El silicio, elemento base de los microchips, se extrae y purifica a partir del cuarzo presente en la arena.]</li><li>[Exigen salas 10,000 veces más limpias que un quirófano: Las fábricas usan "salas blancas" donde una sola mota de polvo puede arruinar un circuito entero.]</li><li>[Los chips modernos tienen miles de millones de transistores: Un solo chip de smartphone actual alberga más componentes que estrellas hay en nuestra galaxia.]</li><li>[Se imprimen usando luz: El proceso se llama fotolitografía y utiliza luz ultravioleta extrema para "dibujar" los microcircuitos con una precisión nanométrica.]</li><li>[El oro es un componente clave: Aunque el silicio es la base, se usan hilos microscópicos de oro puro para conectar el chip con la placa de circuito, ya que el oro no se oxida y es un excelente conductor eléctrico.]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[Tamaño microscópico y biocompatible: Mide aproximadamente el tamaño de un grano de arroz y viene recubierto de vidrio biocompatible para evitar alergias o rechazos]</td><td>[Los primeros chips (como el Intel 4004 de 1971) tenían solo unos 2,300 transistores.]</td> </tr>
+        <tr><td>[Tecnología pasiva sin batería: No emite radiación ni requiere energía propia, ya que se activa solo cuando recibe la señal de un lector compatible.]</td> <td>[Escala micrométrica: Las conexiones y transistores se medían en micrómetros (micras), no en nanómetros.]</td></tr>[Los microchips actuales se definen por una característica fundamental: la integración de miles de millones de transistores en dimensiones nanométricas, un logro alcanzado gracias a la tecnología de litografía ultravioleta extrema (EUV). Este nivel de miniaturización permite colocar componentes que miden apenas unos pocos átomos de ancho, optimizando el espacio físico al máximo y desafiando los límites de la física de los semiconductores.]</td>
+        <tr><td>[Código de identificación único: Contiene un número exclusivo de 15 dígitos que funciona como la cédula de identidad del animal a nivel mundial.]</td><td>[Ventanas de cuarzo: Muchos chips de memoria antiguos (EPROM) tenían una ventana de cristal transparente para poder borrar su contenido exponiéndolos a luz ultravioleta.]</td><td>
+        <tr><td>[Aunque hoy asociamos los chips con el silicio de Silicon Valley, el primer microchip de Kilby se fabricó sobre una pastilla cuadrada de germanio. Medía apenas seis milímetros por lado.]</td><td>[El prototipo original, presentado con éxito el 12 de septiembre de 1958, contenía únicamente un transistor, tres resistencias y un condensador interconectados. Un microprocesador moderno actual alberga miles de millones de transistores en el mismo espacio]</td></td>[Cápsulas robustas: La mayoría utilizaba encapsulados de cerámica o latas de metal (como el formato TO-5), antes de que el plástico barato fuera el estándar.]</td></td>[Alto voltaje: Operaban comúnmente con voltajes fijos altos, como 5V o incluso 12V, generando mucho calor para la poca velocidad que ofrecían.]</td></tr>
+        <tr><td>[Se utilizó una pastilla cuadrada de germanio, un elemento semiconductor que luego fue sustituido por el silicio debido a que este último tolera mejor el calor y es más abundante]</td><td>[El circuito integrado medía menos que un clip sujetapapeles y albergaba únicamente un transistor, tres resistencias y un condensador.]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[el microchip me lo imagino que sera posible que lo implanten en el cerebro para tener un futuro mas tecnologico por lo que lo lo implanten en las neuronas para tener tecnologia en el cerebro por lo que ya no existirian los telefonos,computador,tables u otros dipositivos.]</p>
+    <img src="imagen.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[e utilizado una solo un programa de busqueda(google)por hay e estado buscando imformacion de mi invento (microchip)]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

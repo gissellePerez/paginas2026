@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World!</h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> proyecto invento tecnologico</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: ; color:#333 ; }
+        .tabs{ display: flex; flex-wrap: wrap; background-color:#FFFC2E ; padding: 10px; border-radius: 0px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 3px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 0px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [MAQUINA DE ESCRIBIR]</h1>
+<h2>Estudiante: [angel gabriel landaeta silva] - Curso: [801]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el invento?</h2>
+    <p>[Explicación, utilidad y funcionamiento del invento
+La máquina de escribir es un dispositivo mecánico diseñado con el propósito fundamental de redactar y estandarizar textos sobre papel de forma veloz y legible. Su invención transformó radicalmente la administración de empresas, la literatura y la comunicación escrita al sustituir los manuscritos tradicionales por caracteres tipográficos uniformes y limpios. Este aparato proporcionó por primera vez una herramienta de alta velocidad para la creación de documentos oficiales, reportes y correspondencia, convirtiéndose en la columna vertebral de las oficinas globales durante más de un siglo. 
+
+
+
+El funcionamiento del invento se basa en un sistema interconectado de palancas de segundo y tercer género. Cuando el usuario presiona una tecla en el tablero, la fuerza aplicada activa un brazo metálico en cuyo extremo opuesto se encuentra el carácter moldeado en relieve. Este brazo oscila verticalmente y golpea una cinta textil impregnada en tinta, la cual se interpone instantáneamente frente a la hoja de papel. Al recibir el impacto, la tinta se transfiere al papel, estampando la letra de manera permanente. De forma simultánea, un muelle de escape libera parcialmente la tensión de un resorte interno, lo que provoca que el carro —el mecanismo que sujeta y desplaza el rodillo de papel— avance exactamente un espacio hacia la izquierda para prepararse para la siguiente pulsación. 
+
+
+ 
+Científicamente, la máquina de escribir es una aplicación práctica de la mecánica clásica, específicamente de las leyes de Newton y la cinemática de sólidos rígidos. La primera ley de Newton se evidencia cuando los componentes permanecen en reposo hasta que el operador ejerce una fuerza externa sobre el teclado. La transmisión del movimiento cumple con la segunda ley de Newton, donde la aceleración de la palanca tipográfica es directamente proporcional a la fuerza del impacto digital. Asimismo, se aplican conceptos de la elasticidad de los materiales a través de los muelles helicoidales que absorben la energía y regresan las piezas a su posición inicial, y principios de la química de polímeros y capilaridad en la retención y transferencia de tinta desde la cinta de tela hacia la porosidad de la celulosa del papel.
+Energía utilizada
+La máquina de escribir tradicional es un dispositivo estrictamente mecánico y manual, por lo que utiliza energía mecánica aportada de manera directa por el operador humano. 
+Energía cinética y potencial: Los dedos del mecanógrafo suministran la energía cinética inicial al presionar las teclas.
+Energía elástica almacenada: Parte de esta energía se acumula de forma temporal como energía potencial elástica en los resortes internos al tensarse. Esta fuerza elástica es la responsable de regresar las palancas a su estado de reposo y de propulsar el avance automático del carro. 
+
+
+ 
+(Nota: Aunque los modelos desarrollados en el siglo XX, como las versiones eléctricas y electrónicas, añadieron el uso de energía eléctrica a través de motores o circuitos internos, el invento original funciona de forma autónoma sin electricidad). 
+ 
+Dimensiones reales y peso en el Sistema Internacional (SI)
+dimensiones y la masa varían dependiendo de si el modelo es de escritorio (estándar de oficina) o portátil para viaje. A continuación, se expresan los rangos de medidas bajo las magnitudes del Sistema Internacional de Unidades
+
+]</p>
+    <img src="maquina de escribir.JFIF" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> [Christopher Latham Sholes]</p>
+    <p><strong>Origen:</strong> [El origen del invento patentado por Christopher Latham Sholes se detalla a continuación:
+País: Estados Unidos (desarrollada específicamente en un taller mecánico de Milwaukee, Wisconsin).
+Fecha de patente: 23 de junio de 1868. ]</p>
+    <p>[Christopher Latham Sholes nació el 14 de febrero de 1819 en Mooresburg, Pensilvania, y pasó su juventud formándose como impresor y editor de periódicos en Wisconsin [1, 2]. Su experiencia directa en las redacciones alimentó su profundo interés por optimizar y agilizar las tareas de comunicación escrita, lo que lo llevó a incursionar de manera apasionada en el mundo de la invención industrial [1]. Inicialmente, Sholes desarrolló un aparato mecánico portátil diseñado para numerar de forma secuencial las páginas de los libros y los billetes [1, 3]. Fue precisamente durante el perfeccionamiento de este dispositivo numérico en un taller de Milwaukee, guiado por la sugerencia y colaboración de su socio Carlos Glidden, donde visualizó la posibilidad de expandir el mecanismo básico para que pudiera imprimir no solo cifras matemáticas, sino también todas las letras del alfabeto [1, 4].
+Este esfuerzo de innovación culminó con la obtención de la patente histórica de su máquina de escribir el 23 de junio de 1868 [1, 5]. Sin embargo, su logro más duradero y de mayor impacto global fue la creación de la distribución de teclado QWERTY en 1873 [1, 6]. Sholes diseñó este arreglo específico de las teclas para resolver un problema técnico crítico: cuando el operador escribía a alta velocidad, las palancas mecánicas de las letras consecutivas más comunes chocaban entre sí y bloqueaban el aparato [1, 4]. Al separar estratégicamente los pares de letras más usados en el idioma inglés, Sholes logró optimizar el flujo del mecanismo físico [1]. Consciente de que no contaba con el capital necesario para la producción masiva de su invento, vendió los derechos comerciales de su patente a la prestigiosa compañía de armamento e instrumental de precisión E. Remington & Sons por la suma de doce mil dólares [1, 4]. Sholes pasó sus últimos años dedicando su tiempo a perfeccionar diversos mecanismos mecánicos de oficina en Milwaukee, donde falleció el 17 de febrero de 1890, dejando un legado técnico que se mantiene intacto en las interfaces digitales del siglo XXI [1, 2]]</p>
+    <img src="Sholes.JPG" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2></h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>[El inicio de la máquina de escribir marcó una revolución en la historia de la comunicación y el entorno de trabajo, estandarizando la escritura y acelerando el trabajo administrativo. Su primera etapa evolutiva abarca los primeros intentos de invención y su posterior éxito comercial:Primeros intentos: El primer dispositivo registrado data de 1714 cuando Henry Mill patentó una máquina para imprimir letras. Sin embargo, el primer diseño práctico fue el «tipógrafo», patentado por William Austin Burt en 1829.El gran salto y la masificación: En 1868, el impresor estadounidense Christopher Latham Sholes, junto a sus socios Carlos Glidden y Samuel Soulé, desarrolló la primera máquina de escribir que logró ser funcional y comercialmente viable.Producción industrial: En 1873, Sholes y sus socios vendieron su patente a la famosa empresa de armas E. Remington and Sons, quienes comenzaron a fabricarlas en serie bajo el nombre de Remington Sholes.El nacimiento del teclado QWERTY: Para evitar que los brazos metálicos que imprimían las letras se atascaran al teclear rápido, Sholes diseñó la distribución de teclas QWERTY, convirtiéndose en el estándar universal que seguimos usando en computadoras y teléfonos inteligentes.Esta evolución inicial transformó por completo el ámbito laboral, ya que permitió a los negocios redactar documentos legibles de forma mucho más rápida y eficiente, sentando las bases de la moderna mecanografía.]</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>[a máquina de escribir evolucionó desde un aparato mecánico propenso a trabarse hasta convertirse en un dispositivo eléctrico rápido, revolucionando la productividad de las oficinas durante los siglos XIX y XX. Esta segunda etapa de desarrollo se centró en corregir los fallos de los primeros prototipos, mejorar la velocidad de escritura y estandarizar el diseño industrial.A continuación se detallan las mejoras clave a través del tiempo en esta etapa evolutiva:⚙️ Innovaciones Mecánicas y ErgonomíaTeclado QWERTY: Creado por Christopher Sholes en 1873 para separar las letras más usadas y evitar que las varillas de los tipos se chocaran y se trabaran.Mecanismo de impacto inferior a frontal: Las primeras máquinas escribían "a ciegas" porque los tipos golpeaban el papel por abajo. Se modificó el diseño para que el texto fuera visible mientras se redactaba.Tecla de mayúsculas (Shift): Introducida por Remington en 1878, permitía usar una misma varilla para dos caracteres (mayúscula y minúscula), reduciendo el tamaño físico de la máquina.Tabulador mecánico: Añadido a finales del siglo XIX para permitir un salto rápido de columna, ideal para organizar datos numéricos y tablas de contabilidad.⚡ Transición a la Electricidad y AutomatizaciónAsistencia eléctrica de soporte: Los primeros motores eléctricos de principios del siglo XX reducían el esfuerzo físico necesario para presionar las teclas, disminuyendo la fatiga del mecanógrafo.Carro automatizado: El retorno del carro (pasar a la siguiente línea) dejó de ser una palanca manual y se convirtió en una función automática accionada por un botón.La bola de tipos de IBM (Selectric): Lanzada en 1961, eliminó por completo las varillas tradicionales. Una pequeña esfera con caracteres grabados giraba y golpeaba el papel, aumentando drásticamente la velocidad y permitiendo cambiar las fuentes de letra.📝 Corrección y AlmacenamientoCintas de tinta bicolor: Incorporación de cintas con dos franjas (negra y roja) que se seleccionaban con una palanca para resaltar textos o números negativos.Cintas de corrección integradas: Introducción de la cinta blanca correctora (Lift-Off) que permitía borrar errores de forma limpia golpeando el carácter equivocado con una sustancia adhesiva.Memoria interna básica: Los últimos modelos electrónicos de los años 80 incluían pequeñas pantallas de cristal líquido (LCD) y memoria para almacenar y corregir una línea de texto completa antes de imprimirla físicamente en el papel.]</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>La máquina de escribir moderna ya no es un objeto de producción masiva para oficinas, sino un dispositivo especializado que combina nostalgia, diseño mecánico premium y desconexión digital.A continuación, se detalla cómo es la máquina de escribir en el día de hoy:El mercado actual y fabricaciónModelos mecánicos nuevos: La marca Royal todavía fabrica máquinas mecánicas básicas (como la Royal Classic) destinadas a entusiastas y coleccionistas.Máquinas electrónicas: Empresas como Nakahima producen los últimos modelos con pantallas de texto pequeñas para uso legal y administrativo específico.Mercado de restauración: La mayor actividad económica hoy está en talleres artesanales que reparan y venden modelos clásicos (Olympia, Olivetti, Smith Corona) a precios elevados.El fenómeno de las "Híbridas Digitales"Escritura sin distracciones: Dispositivos modernos como Freewrite de Astrohaus ofrecen la experiencia de una máquina de escribir (pantalla de tinta electrónica, teclado mecánico) pero guardan el texto en la nube.Teclados mecánicos retro: Existe una gran tendencia de teclados para computadora que imitan la estética, el sonido y la resistencia de las máquinas antiguas (como la marca Qwerkywriter).Quiénes las usan hoy en díaEscritores y novelistas: Buscan aislarse de las notificaciones de internet, las redes sociales y las tentaciones de edición constante para enfocarse en el primer borrador.Poetas callejeros: Artistas que redactan poemas al instante en parques o eventos públicos como una forma de arte interactivo.Coleccionistas y hípsters: Usuarios que valoran el diseño industrial del siglo XX, la decoración vintage y la experiencia táctil de la escritura analógica.[]</p>
+    <img src="evolucion maquina de escribir.WEBP" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[La máquina de escribir moderna nos enseña que el progreso tecnológico no siempre borra el pasado, sino que lo redefine. En un mundo obsesionado con la velocidad, la multitarea y la hiperconectividad, el regreso de estos dispositivos es un acto de resistencia cultural. Nos demuestra que las herramientas del ayer poseen un valor humano intrínseco que las pantallas no pueden replicar fácilmente: la belleza de lo tangible, el peso de cada decisión antes de presionar una tecla y la invaluable capacidad de concentrarse en una sola tarea a la vez.Esta evolución nos deja como reflexión que la verdadera productividad no siempre consiste en hacer las cosas más rápido, sino con mayor intención y profundidad. Al despojarnos de las notificaciones constantes y de la tentación de la edición infinita, la máquina de escribir nos invita a reconciliarnos con el error como parte del proceso creativo y a valorar el silencio digital. Al final, nos enseña que para avanzar hacia el futuro con claridad, a veces es necesario desacelerar el ritmo y rescatar los rituales analógicos que nos permiten conectar mejor con nuestros propios pensamientos.]</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul>[Ventajas]</li><li>[Cero distracciones digitales: No tiene internet, redes sociales ni notificaciones, lo que garantiza una concentración absoluta en la escritura.<li/><li>Privacidad y seguridad total: Es un sistema imposible de hackear, espiar o rastrear, protegiendo tus textos de cualquier vulnerabilidad digital.<li/><li>Fomento de la escritura fluida: Al no poder borrar texto fácilmente con un botón, te obliga a pensar mejor antes de escribir y a avanzar sin detenerte a editar.<li/><li>Independencia de la electricidad: Los modelos mecánicos no necesitan cables, baterías ni actualizaciones de software, por lo que siempre están listos para funcionar.<li/><li>Durabilidad y valor tangible: Están construidas para durar décadas y el resultado de tu trabajo es un documento físico inmediato que no depende de archivos corruptos o la nube.]</li></ul>
+    <hr>
+    <ul>[Desventajas]</li><li>[Corrección de errores lenta: No existe el botón de borrar; corregir una palabra exige usar cintas correctoras, líquido blanco o reescribir la página entera.<li/><li>Proceso de edición complejo: Reorganizar párrafos, mover capítulos o cambiar la estructura del texto requiere recortar el papel o mecanografiar todo de nuevo.<li/><li>Falta de respaldo digital: Al generar solo un documento físico único, corres el riesgo de perder todo tu trabajo en caso de incendio, inundación o extravío.<li/><li>Suministros difíciles de conseguir: Encontrar cintas de tinta compatibles, repuestos específicos y talleres de reparación calificados es cada vez más complicado y costoso.<li/><li>Esfuerzo físico y ruido: Requiere aplicar mucha fuerza en los dedos para marcar el papel y el sonido constante del tecleo puede resultar molesto en entornos compartidos.]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[El diseño del teclado QWERTY no solo se creó para evitar atascos mecánicos, sino que también generó un intenso debate sobre la velocidad de escritura que dura hasta hoy. En la década de 1930, un profesor llamado August Dvorak diseñó un teclado alternativo (el teclado Dvorak) que agrupaba las letras más comunes en la fila central, donde los dedos descansan naturalmente.Aunque se demostró científicamente que el sistema Dvorak permite escribir mucho más rápido, reduce la fatiga en las manos y requiere menos esfuerzo físico, nunca logró reemplazar al teclado QWERTY. La razón fue puramente comercial y de costumbre: las personas, las escuelas de mecanografía y las empresas ya se habían adaptado al diseño original de la máquina de escribir Remington y se negaron rotundamente a cambiar sus hábitos, una resistencia que heredamos directamente en nuestras computadoras y teléfonos actuales]</li>
+        <li>[Antes de que existieran las fotocopiadoras o las impresoras digitales, la única forma de duplicar un documento al instante mientras se escribía a máquina era utilizando papel carbón. Este sistema consistía en colocar una hoja de papel común, encima una hoja de papel carbón (que tenía una capa de tinta seca y cerosa) y encima otra hoja de papel normal.Cuando la varilla metálica de la máquina de escribir golpeaba la hoja superior con fuerza, la presión transfería la tinta del papel carbón a la hoja de abajo, creando una copia exacta al mismo tiempo. De este proceso manual nació el término "CC" (Con Copia) que utilizamos hoy en día en los correos electrónicos; originalmente significaba que estabas guardando o enviando una de esas copias físicas hechas con papel carbón.]</li>
+        <li>.[La última fábrica del mundo que producía máquinas de escribir mecánicas para oficinas, llamada Godrej & Boyce, resistió activa en Mumbai, India, hasta el año 2011.A diferencia de los países occidentales, donde las computadoras reemplazaron estos equipos en la década de 1990, en India siguieron siendo indispensables durante mucho más tiempo. Esto se debía principalmente a que cientos de millones de ciudadanos no tenían acceso a electricidad confiable, lo que convertía a la máquina de escribir mecánica en la única herramienta viable, barata y duradera para que los tribunales, abogados y oficinas del gobierno bureaucratic tramitaran documentos oficiales.Cuando la planta cerró definitivamente sus puertas debido a que los pedidos anuales cayeron a unos pocos cientos, la empresa decidió no desechar la maquinaria, sino reconvertir la emblemática fábrica para producir refrigeradores. Las últimas 200 unidades producidas que quedaron en almacén eran, en su gran mayoría, modelos diseñados para escribir en idioma árabe]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[El teclado QWERTY se diseñó para separar las letras comunes y evitar que las varillas se atascaran al escribir rápido.]</td><td>[La primera máquina de escribir comercial (1874) fue fabricada por Remington, una empresa que en ese momento solo hacía armas y máquinas de coser. Por eso, el primer modelo incluía un pedal para el retorno del carro, idéntico al de las máquinas de coser.]</td></tr>
+        <tr><td>[El origen conceptual de la máquina de escribir es mucho más antiguo de lo que la gente cree. El primer diseño registrado de un dispositivo para mecanografiar texto data de 1714, cuando el ingeniero inglés Henry Mill obtuvo una patente del rey Jorge I de Inglaterra.La patente describía un invento diseñado para "imprimir o transcribir letras de forma individual o progresiva, una tras otra, como en la escritura a mano, de manera tan clara y exacta que no se pueda distinguir de la imprenta". Sin embargo, el dato más curioso es que nunca se construyó un prototipo físico. El invento se quedó estrictamente en papel y los planos originales se perdieron para siempre, por lo que nadie sabe con certeza cómo funcionaba mecánicamente. Tuvieron que pasar más de 100 años para que alguien lograra fabricar una máquina funcional basada en esa misma idea]</td><td>[La palabra "cliché" proviene del sonido que hacía la máquina al grabar los textos en las imprentas. El ruido metálico sonaba parecido a un "cliché", y el término se quedó para definir ideas muy repetidas.]</td></tr>
+        <tr><td>[Antes de las computadoras, el "Copy-Paste" (copiar y pegar) se hacía de forma literal con tijeras y pegamento. Los periodistas recortaban párrafos enteros de hojas escritas a máquina y los pegaban en una nueva hoja para reordenar sus artículos.]</td><td>[La máquina de escribir abrió las puertas de las oficinas a las mujeres a finales del siglo XIX. La mecanografía se convirtió en una de las primeras profesiones bien vistas para ellas fuera del hogar, permitiéndoles lograr independencia económica.]</td></tr>
+        <tr><td>[La tecla "Shift" (mayús) se llama así porque literalmente desplazaba (en inglés, to shift) el mecanismo interno de la máquina. Al presionarla, todo el carro o las varillas subían o bajaban para que la sección de las letras mayúsculas golpeara la cinta de tinta.]</td><td>[La palabra "TYPEWRITER" (máquina de escribir) se puede escribir usando únicamente la fila superior del teclado QWERTY. Los vendedores usaban esta palabra como truco en sus demostraciones para escribir rápido y sorprender a los clientes sin cruzar los dedos.]</td></tr>
+        <tr><td>[ El corrector líquido (Liquid Paper) fue inventado por una secretaria, Bette Nesmith Graham, en 1951. Usaba pintura blanca y un pincel en su oficina para ocultar sus errores de mecanografía, una idea que luego vendió a Gillette por millones de dólares.]</td><td>[El escritor J.R.R. Tolkien (autor de El Señor de los Anillos) detestaba las máquinas de escribir porque decía que su ruido interrumpía el flujo de sus pensamientos. Prefería escribir sus extensas novelas a mano con pluma estilográfica.]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Descripción de su visión futurista]</p>
+    <img src="futuro.PNG" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yKpIwi1UUIk" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Enciclopedia Britannica<li/> <li>JSTOR DailyWikipediaNational<li/> <li>Museums ScotlandLibrary of CongressThe Sholes & Glidden Type-Writer<li/> <li>ProjectThe Rutherford Journal</li>V
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>

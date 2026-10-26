@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Comic Sans MS, Arial Black; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color:#F56127; padding: 10px; border-radius: 0px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 20px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 20px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; 
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [EL PLASTICO]</h1>
+<h2>Estudiante: [ABRIL ALEXANDRA ARMAS GIMENEZ] - Curso: [802]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el plastico?</h2>
+    <p>[El plástico es un material sintético de polímeros derivado del petróleo. Sirve para fabricar envases, componentes médicos y productos cotidianos debido a su ligereza, bajo costo e impermeabilidad.Funciona mediante la polimerización, un proceso químico donde moléculas pequeñas (monómeros) se unen para formar cadenas largas. Para su fabricación, utiliza energía térmica y eléctrica. A nivel atómico, actúa como aislante, impidiendo el paso de electricidad y calor.Como el plástico es una categoría de material y no un objeto único, no tiene dimensiones fijas. Sin embargo, se produce industrialmente en gránulos (pellets) de unos 0.003 m de diámetro, y el polímero final tiene una densidad en el Sistema Internacional de 900 kg/m³ a 1400 kg/m³..</p>
+    <img src="invento.jpg" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>
+    <p><strong>Nombre:</strong> [ John Wesley Hyatt y Leo Baekeland]</p>
+    <p><strong>Origen:</strong> [John Wesley Hyatt (28 de noviembre de 1837 - 10 de mayo de 1920) fue un inventor estadounidense. Se le conoce por haber simplificado el proceso de producción del celuloide.
+
+John Hyatt nació en Starkey, Nueva York. Empezó a trabajar en una imprenta a los 16 años, pero llegará como inventor a registrar cientos de patentes. Mientras investigaba la búsqueda de un sustituto del marfil para la producción de bolas de billar; realizó experimentos con celuloide. El resultado fue una manera viable de producir celuloide, y Hyatt creó la Celluloid Manufacturing Company en 1870.
+
+Leo Hendrik Baekeland (Gante, Bélgica, 14 de noviembre de 1863 – Beacon, Nueva York, 23 de febrero de 1944) fue un químico de origen belga afincado en Estados Unidos, que inventó el papel fotográfico Velox (1893) y la baquelita (1907), un plástico barato, no inflamable y versátil que marcó el comienzo de la "era del plástico".[1]
+
+Vida y carrera
+Baekeland recibió el título en Química en la universidad de Gante, donde se dedicó a la enseñanza hasta que emigró a los Estados Unidos en 1889 (inspirado por la autobiografía de Benjamin Franklin), gracias a una oferta para servir de asesor a la Compañía Fotográfica de Nueva York A. y H. T. Anthony (después Ansco). Patentó una placa en seco que podía revelarse en agua. Fundó, junto a Leonard Jacobi, la compañía Nepara Chemical, para producir el papel fotográfico Velox, inventado por él; vendió sus derechos en 1899 a Eastman Kodak por un millón de dólares.
+
+Intentando resolver un problema de síntesis química descubrió un plástico al que llamó baquelita, la primera de una serie de resinas sintéticas que revolucionaron la economía moderna y la vida tecnológica iniciando la "era del plástico". El 8 de febrero de 1909 el descubrimiento de la baquelita fue anunciado formalmente.
+
+En la actualidad, las denominaciones "baquelita", etc. son marcas registradas de Bakelite GmbH en todo el mundo.
+
+Organizó en 1910 la Compañía General Bakelite y fue su presidente hasta 1939, fecha en que fue adquirida dicha compañía por Union Carbon and Carbide; como presidente de la subsidiaria británica nombró en 1916 al inventor James Swinburne, que había desarrollado exactamente la misma fórmula con un día de retraso respecto a Baekeland.
+
+Gracias al éxito de la baquelita se convirtió en multimillonario y fue portada de la revista Time el 22 de diciembre de 1924. Recibió la medalla Franklin en 1940. Es autor del libro Some aspects of industrial chemistry.
+
+Murió de una hemorragia cerebral en un hospital de Nueva York en 1944, con 80 años.]</p>
+    <img src="creador.jpg" alt="imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del plastico: La evolución del plástico abarca desde el uso de polímeros naturales hace milenios hasta la creación de los primeros polímeros sintéticos a finales del siglo XIX. Marcó un hito con el desarrollo de la baquelita en 1907, detonando una revolución industrial que hoy enfrenta grandes desafíos ambientales y de reciclaje.]</h2>
+    <h3>Etapa 1: La historia de este material comenzó buscando alternativas ecológicas, aunque luego se inclinó hacia los derivados del petróleo</h3>
+    <p>[Al principio, el plástico no era un material puramente artificial ni derivado del petróleo. Era semi-sintético, quebradizo y muy peligroso.]</p>
+    <h3>Etapa 2: A lo largo de los años, el plástico cambió radicalmente en sus componentes, su resistencia y su impacto en el mundo.
+
+1. Cambio químico: De vegetal a fósil Origen vegetal: Al inicio se usaba celulosa de plantas  y algodón.
+Origen fósil: Después de 1900, la química descubrió cómo usar el carbón y el petróleo.El motivo: El petróleo permitió crear plásticos más baratos, infinitos y fáciles de fabricar en masa.
+
+2. Cambio físico: Adiós al peligro de explosiónAntes: Los primeros plásticos se derretían con el calor y eran altamente inflamables.
+Después: Nació la baquelita, el primer plástico termoestable. Una vez moldeado con calor, nunca más se derretía ni se quemaba, ideal para cables y enchufes.
+
+3. Cambio de uso: De objeto de lujo a desechableAntes: El plástico imitaba materiales caros (marfil, carey) para crear objetos duraderos como peines o teclas de piano.
+Después: En la década de 1950 nacieron los plásticos de un solo uso (bolsas, envases, vasos). El plástico se volvió sinónimo de "usar y tirar".
+
+4. Cambio ambiental: El desafío modernoAntes: Se consideraba un material milagroso que salvaba animales (evitando la caza de elefantes para obtener marfil).Hoy: Es uno de los mayores problemas ecológicos debido a su lenta degradación (tarda siglos en desaparecer) y la acumulación de microplásticos]</h3>
+    <p>[A través del tiempo, las mejoras del plástico se centraron en corregir sus tres grandes defectos iniciales: la inflamabilidad, la fragilidad y la dificultad para moldearlo.]</p>
+    <h3>Etapa 3:En la actualidad, el plástico se encuentra en una encrucijada histórica: la producción mundial supera los 450 millones de toneladas anuales, pero el planeta exige un freno drástico a su contaminación debido a la crisis climática y la acumulación de microplásticos.Hoy en día, la realidad del plástico se define por tres grandes frentes: La batalla regulatoria mundial, innovaciones tecnológicas y alternativas y la alarmante realidad ambiental</h3>
+    <p>[Hoy en día, el plástico es el material más indispensable y el más rechazado del planeta al mismo tiempo. Su realidad actual se divide entre el avance de la ciencia y una crisis ambiental sin precedentes.]</p>
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[Reflexión personal sobre cómo este invento ayudó a las personas o cambió su forma de vivir, al menos dos parrafos]</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[Ventaja 1]</li><li>[Deben haber como mínimo 5 ventajas]</li></ul>
+    <hr>
+    <ul><li>[Desventaja 1]</li><li>[Deben haber como minimo 5 desventajas]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[Dato curioso 1]</li>
+        <li>[Dato curioso 2]</li>
+        <li>[Agrega según sea necesario, al menos 10 datos curiosos]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>[Dato 1]</td><td>[Dato 2]</td></tr>
+        <tr><td>[Dato 3]</td><td>[Dato 4]</td></tr>
+        <tr><td>[Dato 5]</td><td>[Dato 6]</td></tr>
+        <tr><td>[Dato 7]</td><td>[Dato 8]</td></tr>
+        <tr><td>[Dato 9]</td><td>[Dato 10]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Descripción de su visión futurista]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Libro/Sitio Web/Video usados, deben haber al menos 6 fuentes diferentes]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
+

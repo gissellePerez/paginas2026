@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #2c3e50; padding: 10px; border-radius: 5px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 3px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 5px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [avion]</h1>
+<h2>Estudiante: [angie paola espejo reyes] - Curso: [801]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el invento?</h2>
+    <p>[Los aviones comerciales llevan a millones de pasajeros por todo el mundo cada día. También sirven para enviar mercancías urgentes, medicinas y correo postal a lugares lejanos que tardarían días en alcanzar por vía terrestre o marítima.
+
+ En el ámbito militar, los aviones sirven para la defensa nacional, la vigilancia de fronteras y el transporte de tropas. Además, se usan en misiones humanitarias para apagar incendios forestales, llevar ayuda a zonas afectadas por desastres naturales y rescatar heridos.
+
+Los científicos usan aviones especiales para estudiar el clima, medir la contaminación del aire y fotografiar terrenos difíciles. Estas aeronaves permiten recopilar datos desde el cielo para entender mejor nuestro planeta y prevenir riesgos ambientale.]</p>
+
+    <img src="invent El funcionamiento de un avión se basa en el equilibrio de cuatro fuerzas fundamentales (peso, sustentación, empuje y  rrr rresistencia). Estas fuerzas interactúan gracias a diversas ramas de la ciencia aplicada, logrando que toneladas de peso se mantengan en el aire, largo:37,57m, ancho:34,10m, altura:11,76m, peso:42.600kg (pero depende del tipo de avion).
+larg.jpg" alt="Imagen del invento">
+</div>
+<div id="biografia" class="contenido">
+   <p>Nacidos en Indiana, Ohio (Estados Unidos)Wilbur Wright nació el 16 de abril en 1867 en Millvelle indiana y su hermano Orville Wright nació el 19 de agosto de 1871 en millvelle indiana, desde pequeños mostraron una gran fascinación por la ciencia y la mecánica. En su juventud abrieron una tienda y taller de bicicletas en Ohio, su fascinación por volar fue por un helicóptero de juguete y eso los llevo a estudiar la aerodinámica y observar el vuelo de las aves, así construyeron varios planeadores para perfeccionar el control de la aeronave en el aire, tras probar sus diseños se trasladaron a carolina del norte, allí construyeron su primera aeronave propulsada fabricado por ellos mismos, en 1903 pasaron a la historia por su invento, en hito, Orville realizo su primer vuelo a bordo del avión, la nave recorrió aproximadamente 36 metros durante 12 segundos, ese mismo día realizaron 3 vuelos mas, el ultimo fue pilotado por Wilbur duro 59 segundos y cubrió 260 metros. en 1905 construyeron su primera maquina voladora verdaderamente practica. patentaron su invento y fundaron la American Wright Company para comercializar sus aeronaves. Wilbur falleció presuntamente de fiebre tifoidea a los 45 años el 30 de mayo en 1912 en Dayton Ohio, y Orville continuo trabando en la investigación aeronáutica hasta vender la compañía y retirarse en 1915, después de su retiro falleció el 30 de enero de 1948 a la edad de 76 años por un ataque al corazon en Dayton Ohio.
+
+ </p>
+<p>fueron dos pioneros de la aviación estadounidense. Tras perfeccionar sus habilidades mecánicas con su propio negocio de bicicletas, lograron la hazaña histórica de realizar el primer vuelo controlado, sostenido y propulsado de una aeronave más pesada que el aire, el 17 de diciembre de 1903, El primer vuelo motorizado (17 de diciembre de 1903), Innovación en el control de vuelo, Creación del primer avión práctico (1904-1905), Patentes y expansión global, 
+    
+<p><strong>Nombre:</strong> [los hermanos Wilbur y Orville Wright]</p>
+    <p><strong>Origen:</strong> [17 de diciembre de 1903 en estados unidos]</p>
+    <p>[]</p>
+    <img src="creador.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>Evolución del invento</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>[El primer avión con motor y control de la historia fue el Wright Flyer de los hermanos Wright en 1903. Era una estructura muy frágil de madera y tela, con dos alas superpuestas (biplano), sin ruedas, impulsado por un pequeño motor de gasolina. El piloto no iba sentado en una cabina, sino acostado boca abajo sobre el ala inferior.]</p>
+    <h3>Etapa 2: Cambios</h3>
+    <p>[A lo largo del tiempo, el avión ha evolucionado desde estructuras frágiles de madera y tela hasta modernas aeronaves de materiales compuestos y motores ultraeficientes. Esta transformación mejoró la velocidad, la seguridad, la capacidad de pasajeros y el confort, acortando distancias globales de semanas a pocas horas.]</p>
+    <h3>Etapa 3: Actualidad</h3>
+    <p>[Hoy en día, el avión es una máquina muy avanzada, hecha con materiales ligeros y súper fuertes como la fibra de carbono y el aluminio. Los modelos modernos gastan menos combustible, hacen menos ruido y vuelan muy lejos, con pantallas táctiles, internet a bordo y cabinas diseñadas para dar más espacio y comodidad.]</p>
+    <img src="evolucion.jpg" alt="<  ">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[La creacion del avion nos ayudo a mejorar muchas cosas, como el transporte de personas y objetos, ayuda con el tiempo para que todo llegue mas rapido, etc. El avion nos hizo que algunas cosas que si antes eran dificiles ahora se puede decir que son mas faciles y en menos tiempo.   ]</p>
+</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[Ventaja 1]</li><li>[Las ventajas del avion son:
+                               <li>  1. La rapidez y la eficiencia.</li>
+                               <li>  2. Seguridad y confianza.</li>
+                               <li>  3. Servicio y comodidad.</li>
+                               <li>  4. Conectividad global.</li> 
+                               <li>  5. Ventaja operativa. ]</li></ul>
+    <hr>
+    <ul><li>[Desventaja 1]</li><li>[Las esventajas del avion son:
+                                <li> 1. Precios elevados.</li>
+                                <li< 2. Procesos largos.</li> 
+                                <li> 3. Limites de equipaje.</li> 
+                                <li> 4. Clima adverso.</li>
+                                <li> 5. Contaminacion.]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li> 1.La estructuras de los aviones soportan impactos de rayos sin peligro. </li>
+        <li>2.El combustible del avion se encuentra en las alas.  ]</li>
+        <li>3.Las alas del avion pueden doblarse hacia arriba sin romperse.</li>
+            <li>  4.El piloto y el copiloto comen platos separados para que ambos no sufran una intoxicacion.</li>
+              <li>5.Las mascaras de oxigeno solo dura de 12 a 15 minutos para bajar a una altura segura. </li>
+              <li>6.El agujero en la ventana del avion sirve para equilibrar la presion del aire entre el interior y el exterior de la cabina.</li>
+              <li>7.Muchas aerolineas no ponen fila 13 por simple supersticion de los pasajeros.</li>
+              <li>8.La mayoria de aviones se pintan de blanco por que este color refleja el sol y evita que el metal se caliente demasiado.  </li>
+              <li>9.Las ruedas de los aviones llevan nitrógeno en su interior para aguantar aterrizajes muy rápidos y cambios bruscos de temperatura.</li>
+             <li>10.Los aviones modernos pueden volar y aterrizar de manera segura usando un solo motor si el otro deja de funcionar. ]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+<tr><td>[Estructuras de madera, tubos de acero y revestimientos de tela]</td><td>[Aleaciones de aluminio ultralijeras y materiales avanzados]</td></tr><tr><td>[Motores de piston y helice eran lentos,tenian poca potencia]</td><td>[Motores de turbofan de alta eficiencia,mas limpios y sileciosos]</td></tr>
+<tr><td>[Los pilotos dependian de mapas visules impresos]</td><td>[Uso masivo de sistemas GPS, radares meteorologicos, piloto automatico digital]</td></tr>
+<tr><td>[Sin cabinas presurizadas, los aviones volaban por debajo de 3,000 metros]</td><td>[Cabinas presurizadas y climatizadas,vuelan 10,000 metros arriba]</td></tr>                                                             
+<tr><td>[Accidentes significativamente más altas debido a limitaciones mecánicas y falta de alertas tecnológicas]</td><td>[ Niveles de siniestralidad mínimos gracias a estrictas normativas internacionales, redundancia de sistemas y mantenimiento predictivo computarizado]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>
+    <p>[Yo pienso que el avion en un futuro va a ser grande, con segundo piso, con cohetes por los lados y pistolas a los alrededores para su defensa. ]</p>
+    <img src="angie futuro.png" alt=" ">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RXuCwPhvW44 frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Google, IA, mi cerebro, youtube, wikipedia,chatGPT. ]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [CURSO]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>

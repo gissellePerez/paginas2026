@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Invento Tecnológico</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .tabs { display: flex; flex-wrap: wrap; background-color: #2c3e50; padding: 10px; border-radius: 5px; }
+        .tab { margin: 5px; padding: 10px 15px; background-color: #7f8c8d; color: white; cursor: pointer; border-radius: 3px; }
+        .tab:hover { background-color: #1abc9c; }
+        .contenido { display: none; padding: 20px; border: 1px solid #ccc; background: white; margin-top: 10px; border-radius: 5px; }
+        .activo { display: block; }
+        img { max-width: 300px; display: block; margin: 15px 0; border: 2px solid #2c3e50; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        footer { margin-top: 30px; padding: 20px; text-align: center; background-color: #ddd; font-size: 14px; }
+    </style>
+    <script>
+        function abrir(nombre) {
+            var secciones = document.getElementsByClassName("contenido");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.remove("activo");
+            }
+            document.getElementById(nombre).classList.add("activo");
+        }
+    </script>
+</head>
+<body>
+<h1>EL INVENTO: [LA IMPRENTA MODERNA]</h1>
+<h2>Estudiante: [Karol lucely ] - Curso: [801]</h2>
+<div class="tabs">
+    <div class="tab" onclick="abrir('descripcion')">Descripción</div>
+    <div class="tab" onclick="abrir('biografia')">Biografía</div>
+    <div class="tab" onclick="abrir('evolucion')">Evolución</div>
+    <div class="tab" onclick="abrir('impacto')">Impacto</div>
+    <div class="tab" onclick="abrir('ventajas')">Ventajas</div>
+    <div class="tab" onclick="abrir('curiosidades')">Curiosidades</div>
+    <div class="tab" onclick="abrir('tabla')">Antes / Ahora</div>
+    <div class="tab" onclick="abrir('futuro')">Futuro</div>
+    <div class="tab" onclick="abrir('video')">Video</div>
+    <div class="tab" onclick="abrir('fuentes')">Fuentes</div>
+</div>
+<div id="descripcion" class="contenido activo">
+    <h2>¿Qué es el invento?</h2><p>La imprenta moderna es  sistema de impresión desarrollado a mediados del siglo XV que permitió producir libros y otros textos de forma mucho más rápida, económica y uniforme que la copia manual La imprenta moderna tambien es el  método mecánico de reproducción masiva de textos e imágenes creado por el orfebre alemán Johannes Gutenberg alrededor de 1440. Utilizó piezas metálicas móviles llamadas tipos móviles, una aleación de plomo, estaño y antimonio, y una prensa basada en los tornillos usados para exprimir uvas, Piezas pequeñas de plomo y otros metales con letras grabadas que se podían ordenar y usar muchas veces. Se usó una tinta a base de aceite que se fijaba bien al metal y al papel sin chorrearse  Ayudó a la llegada del Renacimiento y a la rápida difusión de nuevas ideas por todo el mundo. El conocimiento y la ciencia llegaron a más personas y dejaron de ser un privilegio de pocos.Los libros pasaron de copiarse a mano, uno por uno por monjes, a producirse en grandes cantidades.>
+</div>
+<div id="biografia" class="contenido">
+    <h2>Biografía del creador</h2>Johannes Gutenberg (c. 1398–1468) fue un orfebre e inventor alemán, universalmente reconocido como el padre de la imprenta moderna. Su revolucionario sistema de tipos móviles metálicos y su prensa mecánica hicieron posible la producción masiva de libros, democratizando el acceso al conocimiento y acelerando la llegada de la Edad Moderna.Nacido en Maguncia, Alemania, bajo el nombre de Johannes Gensfleisch zur Laden, pasó gran parte de su juventud en el exilio debido a conflictos políticos locales. Instalado en Estrasburgo alrededor de 1434, trabajó como orfebre y comenzó a experimentar en secreto con métodos de impresión tipográfica. Su obra maestra vio la luz en 1455: la famosa Biblia de Gutenberg (o Biblia de 42 líneas).A pesar de la magnitud de su invento, Gutenberg vivió una vida marcada por las dificultades financieras. Tras un costoso juicio con su socio inversor, Johann Fust, perdió su taller y gran parte de sus equipos antes de poder disfrutar del éxito comercial de su obra.Falleció en 1468 en su ciudad natal. Su invento transformó radicalmente la historia europea, impulsando movimientos como la Reforma Protestante y el Renacimiento Juan Gutenberg (Johannes Gutenberg) fue un inventor y orfebre alemán nacido hacia el año 1400 en Maguncia. Revolucionó la historia al desarrollar la primera imprenta de tipos móviles en Europa, lo que permitió la producción masiva de libros y democratizó el acceso al conocimiento y la cultura  Regresó a Maguncia en 1448 y logró poner en marcha su taller de imprenta hacia 1450 ormuló una tinta a base de aceite que se adhería bien al metal sin correrse en el papel, Desarrolló una prensa basada en las máquinas usadas para exprimir uvas en la producción de vino,  Dejó atrás la copia de libros a mano hecha por los monjes, que era lenta y costosa Formación como orfebre: Gracias a sus conocimientos en el trabajo de metales y la fundición del oro (heredados en parte por la labor de su familia en la ceca o casa de moneda local), adquirió las bases técnicas necesarias para desarrollar su invento,La Biblia de Gutenberg: De regreso en Maguncia hacia 1448, fundó un taller gráfico. Su obra cumbre y el primer gran libro impreso en Occidente con tipos móviles fue la Biblia de 42 líneas (completada alrededor de 1455), una joya de la tipografía por su alta calidad visual Problemas financieros y últimos años: Para financiar su ambicioso taller, Gutenberg solicitó grandes préstamos al acaudalado prestamista Johann Fust. Incapaz de devolverlos a tiempo, Fust lo demandó judicialmente y se apropió de gran parte del taller y de las imprentas antes de que Gutenberg viera los frutos económicos de su creación. A pesar de ello, pasó sus últimos años con cierto reconocimiento institucional y pensionado por el arzobispo local, hasta su muerte en Maguncia en 1468.
+    <p><strong>Nombre:</strong> [johannes gutenberg]</p>
+    <p><strong>Origen:</strong> [Johannes Gutenberg nació en Alemania (en la ciudad de Maguncia, en el  año 1400).]</p>
+    <p>[Narración de su vida Johannes Gutenberg fue un orfebre y inventor alemán que revolucionó la historia al crear la imprenta de tipos móviles en el siglo XV. Nació en Maguncia, Alemania, alrededor de 1400 y logró cambiar el acceso al conocimiento En la ciudad alemana de Maguncia, hacia mediados del siglo XV, un hombre obsesionado con el poder de la palabra escrita caminaba en silencio por su taller. Se llamaba Johannes Gutenberg, un orfebre y artesano de ingenio infatigable que estaba a punto de cambiar para siempre el curso de la civilización, Hasta ese entonces, los libros eran un lujo exclusivo de reyes, nobles y monasterios. Cada ejemplar requería meses o incluso años de arduo trabajo manual por parte de los copistas. Los textos eran escasos, caros y celosamente guardados. Gutenberg se hizo una pregunta audaz: ¿Y si las palabras pudieran multiplicarse como las espigas del trigo? El camino de Johannes no fue fácil. Durante años, invirtió cada moneda que tenía y pidió préstamos cuantiosos, enfrentándose al escepticismo de sus vecinos y a las deudas crecientes. Su gran genialidad no fue simplemente inventar una máquina de imprimir, sino conectar varias innovaciones clave en un sistema perfecto. ]</p>
+    <img src="creador.jpg" alt="Imagen del autor">
+</div>
+<div id="evolucion" class="contenido">
+    <h2>La imprenta de Johannes Gutenberg evolucionó desde una prensa manual de madera con letras de plomo fundido en 1450 hasta los sistemas rotativos de vapor y la actual impresión digital. Este invento pasó de fabricar decenas de textos religiosos a masificar la cultura en todo el planeta.</h2>
+    <h3>Etapa 1: Inicio</h3>
+    <p>[Johannes Gutenberg comenzó su vida como el hijo menor de una familia acomodada de Maguncia, Alemania, trabajando inicialmente como orfebre y artesano del metal. Nació alrededor del año 1400 y, en sus primeros años profesionales, se dedicó al procesamiento de metales y a la fabricación de objetos religiosos y pequeños espejos para peregrinos.]</p>
+    <h3>Etapa 2: Cambios</h3>nació en Maguncia, Alemania, alrededor del año 1400. Creció en una familia rica, aprendió el oficio de la orfebrería y trabajó con metales antes de crear la imprenta moderna.
+    <p>[Mejoras a través del tiempo]</p>
+    <h3>Etapa 3: Actualidad</h3>Johannes Gutenberg falleció el 3 de febrero de 1468. Hoy en día, su legado se recuerda como el origen de la imprenta moderna y la difusión global del conocimiento.
+    <p>[Cómo es hoy en día]</p>Johannes Gutenberg falleció en febrero de 1468, por lo que hoy en día no vive; sin embargo, se le recuerda universalmente como un personaje histórico fundamental y el padre de la imprenta moderna de tipos móviles.
+    <img src="evolucion.jpg" alt="linea del tiempo de la evolucion del invento">
+</div>
+<div id="impacto" class="contenido">
+    <h2>Impacto en la sociedad</h2>
+    <p>[La invención de la imprenta moderna por Johannes Gutenberg transformó radicalmente la vida cotidiana y la mente de la humanidad al democratizar el acceso al conocimiento. Antes de este hito, el saber era un bien sumamente custodiado, confinado a las élites eclesiásticas y monárquicas que controlaban la narrativa y mantenían a la gran mayoría de la población en el analfabetismo. Al permitir la producción masiva de libros de forma rápida y económica, la imprenta no solo llenó estanterías, sino que abrió las puertas de las escuelas y los hogares a nuevas ideas. De repente, aprender a leer dejó de ser un lujo exclusivo para convertirse en una herramienta de empoderamiento personal, permitiendo que la gente común cuestionara su entorno, formara sus propios criterios y participara de manera más activa en la sociedad.
+
+Asimismo, este avance sentó las bases de la comunicación moderna y aceleró el progreso científico, cultural y político a una escala sin precedentes. Las ideas de pensadores, científicos y reformadores ya no dependían de la frágil y lenta copia manual de un manuscrito, sino que podían cruzar fronteras en semanas, encendiendo revoluciones culturales como el Renacimiento y la Ilustración. En nuestra vida actual, donde consumimos información de manera instantánea con un solo clic, a menudo olvidamos que esa libertad de pensamiento y el derecho universal a informarnos nacieron en aquel modesto taller de Maguncia, cuando las primeras letras de plomo se unieron para darle voz a toda la humanidad.</div>
+<div id="ventajas" class="contenido">
+    <h2>Ventajas y Desventajas</h2>
+    <ul><li>[ ]</li><li>[1 ventaja 1 Creó letras individuales intercambiables.
+              
+ventaja 2 Usó una aleación duradera.Producción masiva: Permitió fabricar cientos de ejemplares de un libro en el tiempo que antes tomaba copiar uno a mano.Abaratamiento de costos: Redujo de forma drástica el precio de los libros, volviéndolos accesibles para más personas.Democratización del saber: El conocimiento dejó de ser un monopolio exclusivo de la Iglesia y la realeza Impulso a la alfabetización: Ayudó a que más personas comunes aprendieran a leer y escribir al tener libros disponibles  Facilitó la propagación rápida de las artes, la filosofía y la cultura clásica por Europa Permitió que los científicos compartieran descubrimientos exactos sin errores de copia manual Ayudó a distribuir Biblias traducidas a idiomas locales, cuestionando el poder papal  Fijó las reglas gramaticales y ortográficas de las lenguas vulgares o nacionales Dio origen a los primeros boletines, gacetas y periódicos informativos Su mezcla de metales para los tipos y su tinta a base de aceite fueron un gran avance químico y mecánico
+
+ventaja 3 Permitió reutilizar las piezas Básicamente la invención de la imprenta hizo posible la multiplicación de textos en la Edad Media, cuando la edición de libros estaba muy restringida, revolucionó la cultura al ampliar el número de lectores potenciales al multiplicar el número de libros y reducir su coste, por lo que la alfabetización recibió un ...
+
+ventaja 4 Facilitó la corrección de errores.
+ 
+ventaja 5 Reemplazó la copia a mano. ]</li></ul>
+    <hr>
+    <ul><li>[Desventaja 1 ]</li><li>  Perdió su propio taller  Sus deudas provocaron que sus socios le embargaran el taller y perdiera los frutos de su invento, Dejó sin trabajo a una gran cantidad de monjes copistas y amanuenses tradicionales. 
+             Desventaja 2 Cedió sus principales beneficios Facilitó la impresión rápida de propaganda subversiva, falsa o peligrosa para el orden social La propagación de ideas contestatarias avivó guerras de religión en Europa.
+             Desventaja 3 Su financista se quedó todoLos gobiernos y autoridades crearon listas de libros prohibidos para frenar la libertad de imprenta Componer una página letra por letra seguía requiriendo mucho tiempo antes de poder tirar las copias.
+             Desventaja 4 Murió en la pobreza Las letras de metal se deformaban con el uso continuo y exigían constantes fundiciones Puso en desventaja la transmisión de la tradición oral y otras formas de memoria local no escrita.
+             Desventaja 5 Enfrentó constantes demandas judiciales Convirtió los libros en un negocio comercial donde los impresores ricos decidían qué se publicaba Las élites tradicionales rechazaron al principio el libro impreso por considerarlo de menor calidad que el manuscrito. ]</li></ul>
+</div>
+<div id="curiosidades" class="contenido">
+  <h2>Datos curiosos</h2>
+    <ul>
+        <li>[Dato curioso 1.]</li>
+        <li>[Dato curioso 2]</li>
+        <li>agregue 10 datos curiosos del creador]</li>
+    </ul>
+</div>
+<div id="tabla" class="contenido">
+    <h2>Antes y Ahora</h2>
+    <table>
+        <tr><th>Antes (Características antiguas)</th><th>Ahora (Características modernas)</th></tr>
+        <tr><td>Dato 1 Tomó el nombre de la casa familiar (Hof zum Gutenberg) ubicada en la ciudad de Maguncia, Alemania.</td>
+<td>Dato 2 Para diseñar su prensa de impresión, Gutenberg se basó en el funcionamiento de las tradicionales prensas de uva utilizadas para elaborar vino en la        región.</td></tr>
+        <tr><td>[Dato 3 Su nombre real completo era Johannes Gensfleisch zur Laden. "Gensfleisch" se traduce de manera informal como "carne de ganso". ]</td><td>
+[Dato 4 Su obra cumbre fue la llamada Biblia de 42 líneas, impresa alrededor de 1455. Se hicieron cerca de 180 ejemplares.]</td></tr>
+        <tr><td>
+[Dato 5  Su socio Johannes Fust lo demandó por los préstamos no devueltos. Como resultado, Fust se quedó con el taller y gran parte de los equipos antes de que Gutenberg pudiera ver las ganancias.]</td><td>
+[Dato 6 Como casi no existen registros personales de su vida, la mayor parte de la información que los historiadores tienen sobre él proviene de documentos legales y demandas judiciales. ]</td></tr>
+        <tr><td>
+[Dato 7  Uno de los documentos legales que se conservan sobre él registra una demanda de una mujer que aseguraba que Gutenberg le había prometido matrimonio a su hija.]
+</td><td>
+[Dato 8 Inspiración vinícola: Para diseñar su prensa de impresión, Gutenberg se basó en el funcionamiento de las tradicionales prensas de uva utilizadas para elaborar vino en la región.]</td></tr>
+        <tr><td>
+[Dato 9 Su apellido paterno (Gensfleisch) se traduce popularmente como "carne de ganso".]
+</td><td>[Dato 10 doptó "Gutenberg" en honor a la casa solariega (Hof zum Gutenberg) donde nació en Maguncia, Alemania.]</td></tr>
+    </table>
+</div>
+<div id="futuro" class="contenido">
+    <h2>El invento en 100 años</h2>La imprenta moderna fue creada alrededor de 1440 por Johannes Gutenberg, destacando por el uso de tipos móviles metálicos, la prensa de tornillo y la tinta oleosa década de 1920, la imprenta moderna ya no era un proceso artesanal de madera y tipos sueltos asentados a mano, sino una industria masiva y automatizada impulsada por la electricidad y el vapor. Las imprentas de los años 20 vivían una época dorada gracias al nacimiento del periodismo de masas, el auge de la publicidad y la popularidad de las primeras revistas ilustradas a gran escala.
+    <p>[Descripción de su visión futurista]</p>
+    <img src="futuro.jpg" alt="Mi dibujo del futuro">
+</div>
+<div id="video" class="contenido">
+    <h2>Video del invento</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="fuentes" class="contenido">
+    <h2>Fuentes de información</h2>
+    <ul>
+        <li>[Libro/Sitio Web/Video usados, deben haber al menos 6 fuentes diferentes]</li>
+    </ul>
+</div>
+<footer>
+    <p>Proyecto de Tecnología e Informática – Grado Octavo - [801]</p>
+    <p>COLEGIO ANTONIO JOSÉ URIBE IED • Año 2026</p>
+</footer>
+</body>
+</html>
